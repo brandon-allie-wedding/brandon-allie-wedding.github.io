@@ -1,0 +1,27 @@
+---
+title: "Publications"
+---
+
+
+# Peer-reviewed Articles
+Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. 2017. Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *2017 IEEE Canada International Humanitarian Technology Conference (IHTC)*, 85-89. \[Conference Proceedings\] [10.1109/IHTC.2017.8058206](https://doi.org/10.1109/IHTC.2017.8058206)
+
+[Google Scholar Profile](https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&hl=en)
+
+##Conferences Presentations
+**Edwards BPM**, Jacobs S, Gillis D. 2018. Digital Plovers: Informing management decisions of endangered Piping Plovers using an environmental agent-based model. *National Integrative Research Conference 2018*, Montréal, QC. \[Oral Presentation & Poster\]
+
+**Edwards BPM**, Jacobs S, Gillis D. 2017. Modelling breeding success of Piping Plovers using an environmental agent-based model. *British Ornithologists’ Union 2017 Twitter Conference.* \[Twitter Conference\]
+
+**Edwards BPM**, Gillis D. 2017. Using environmental agent-based modelling to simulate the breeding success of piping plovers. *CEPS Undergraduate Poster Session*, Guelph, ON. \[Poster\]
+
+**Edwards BPM**, Gillis D. 2017. Modelling habitat loss in Piping Plovers using an environmental agent-based model. *American Ornithology 2017*, Lansing, MI. \[Poster\]
+
+Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. 2017. Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *IEEE International Humanitarian Technology Conference*, Guelph, ON. \[Oral Presentation\]
+
+**Edwards B**, Rose D, Requejo F, Rollins E, Kett R, Gillis D. 2016. Improving efficiency of traditional agent-based models to investigate anthropogenic activities on a wild fish population. *CPES Undergraduate Poster Session*, Guelph, ON. \[Poster\]
+
+###Upcoming
+**Edwards BPM**, Jacobs S, Gillis D. August 2018. Assessing the effects of beach raking on piping plover reproductive success using an environmental agent-based model. *42nd Annual Waterbirds Society Meeting*, Vancouver, BC. \[Accepted Oral Presentation\]
+
+**Edwards BPM**, Smith AC. August 2018. Improved population trajectories for North American swallows, swifts, and nightjars with a hierarchical Bayesian GAM. *International Ornithological Congress 2018*, Vancouver, BC. \[Accepted Poster\]

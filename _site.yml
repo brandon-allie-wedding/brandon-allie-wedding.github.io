@@ -2,14 +2,14 @@ name: "Brandon Edwards"                                # CHANGE HERE
 output_dir: "."
 navbar:
   title: "Brandon Edwards"                             # CHANGE HERE 
-  type: inverse
+  type: default
   left:
     - text: "About"
       icon: fa-user 
       href: about.html
-    - text: "CV"
-      icon: fa-file-pdf-o
-      href: cv.html
+    - text: "Publications"
+      icon: fa-pencil
+      href: publications.html
     - text: "Blog"
       icon: fa-rss
       href: http://brandonedwards.ca/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 
