@@ -4,9 +4,6 @@ navbar:
   title: "Brandon Edwards"                             # CHANGE HERE 
   type: inverse
   left:
-    - text: "Home"
-      icon: fa-home
-      href: index.html
     - text: "About"
       icon: fa-user 
       href: about.html
@@ -15,7 +12,7 @@ navbar:
       href: cv.html
     - text: "Blog"
       icon: fa-rss
-      href: https://brandonedwards.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 
+      href: http://brandonedwards.ca/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 
   right:
     - text: "Contact me"
       icon: fa-envelope-o
