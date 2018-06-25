@@ -5,5 +5,3 @@ output:
     includes:
       in_header: cover.html
 ---
-
-You're up and running!
