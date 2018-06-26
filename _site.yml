@@ -8,8 +8,13 @@ navbar:
       icon: fa-user 
       href: about.html
     - text: "Co-op"
-      icon: fa-briefcase 
-      href: coop.html
+      icon: fa-briefcase
+      menu:
+        - text: "Overview"
+          href: coop.html
+        - text: "---------"
+        - text: "Work Term 1 & 2"
+          href: wt1.html
     - text: "Publications"
       icon: fa-pencil
       href: publications.html

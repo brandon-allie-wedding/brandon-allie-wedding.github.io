@@ -190,12 +190,23 @@ $(document).ready(function () {
     About
   </a>
 </li>
-<li>
-  <a href="coop.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-briefcase"></span>
      
     Co-op
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="coop.html">Overview</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="wt1.html">Work Term 1 &amp; 2</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="publications.html">
@@ -242,16 +253,26 @@ $(document).ready(function () {
 
 
 <p>While attending the University of Guelph, I have had the priviledge of partaking in co-operative education. My overall goal of my co-op experiences was to be as interdisciplinary as possible while gaining out-of-the-classroom computer science knowledge. Computer science is a very versatile field that has applications in almost any other field, and I wanted to tap into some of those applications.</p>
-<p>Below, you will find work reports from my completed co-op job experiences at the University of Guelph.</p>
-<div class="container">
-<div class="row">
-<pre><code>&lt;div class=&quot;col-sm&quot;&gt;
-  &lt;img src=&quot;img/pipl-painting.jpg&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-sm&quot;&gt;
-  My first two work terms took place at the University of Guelph&#39;s School of Computer Science. I took on the role of an Undergraduate Research Assistant under the direction of Dr. Daniel Gillis.
-&lt;/div&gt;</code></pre>
+<p>Below, you will find work reports from my completed co-op job experiences at the University of Guelph. Currently, Co-op Work Term 1 &amp; 2 has been completed. Reports for Work Term 3 and Work Term 4 will be available September 2019 and September 2020, respectively.</p>
+<style>
+.column-left{
+  float: left;
+  width: 45%;
+  text-align: left;
+}
+
+.column-right{
+  float: right;
+  width: 45%;
+  text-align: left;
+}
+</style>
+<div class="column-left">
+<p><a href="wt1.html"><img src="img/pipl-painting.jpg" /></a></p>
 </div>
+<div class="column-right">
+<h1 id="co-op-work-term-1-2"><a href="wt1.html">Co-op Work Term 1 &amp; 2</a></h1>
+<p>My first two work terms took place at the University of Guelph’s School of Computer Science. I took on the role of an Undergraduate Research Assistant under the direction of Dr. Daniel Gillis.</p>
 </div>
 
 
