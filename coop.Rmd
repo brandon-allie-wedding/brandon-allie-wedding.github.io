@@ -1,0 +1,18 @@
+---
+title: "Co-operative Education"
+---
+
+While attending the University of Guelph, I have had the priviledge of partaking in co-operative education. My overall goal of my co-op experiences was to be as interdisciplinary as possible while gaining out-of-the-classroom computer science knowledge. Computer science is a very versatile field that has applications in almost any other field, and I wanted to tap into some of those applications.
+
+Below, you will find work reports from my completed co-op job experiences at the University of Guelph.
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <img src="img/pipl-painting.jpg">
+    </div>
+    <div class="col-sm">
+      My first two work terms took place at the University of Guelph's School of Computer Science. I took on the role of an Undergraduate Research Assistant under the direction of Dr. Daniel Gillis.
+    </div>
+  </div>
+</div>
