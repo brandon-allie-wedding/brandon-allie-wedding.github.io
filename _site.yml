@@ -25,9 +25,12 @@ navbar:
     - text: "Contact me"
       icon: fa-envelope-o
       href: mailto:edwardsb@uoguelph.ca                    # CHANGE HERE 
-    - text: "GitHub"
-      icon: fa-github
+    - icon: fa-github
       href: https://github.com/BrandonEdwards      # CHANGE HERE 
+    - icon: fa-linkedin
+      href: https://www.linkedin.com/in/brandonpmedwards/
+    - icon: fa-twitter
+      href: https://twitter.com/bedwards144
 output:
   html_document:
     theme: cosmo

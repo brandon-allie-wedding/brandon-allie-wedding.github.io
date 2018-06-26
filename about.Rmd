@@ -1,8 +1,15 @@
 ---
 title: "About me"
+output:
+  html_document:
+    includes:
+      in_header: about-cover.html
 ---
 
-![](img/about.jpg)
-I'm a Computer Science and Statistics undergraduate student at the University of Guelph. My academic interests lie in ecological modelling and population risk assessment. I'm currently completing my first co-op term with Dr. Daniel Gillis in the School of Computer Science, University of Guelph. During this work term, I am developing an implementation of an environmental agent-based model to assess the effects of anthropogenic activities on endangered piping plovers.
+I'm a Computer Science and Statistics undergraduate student at the University of Guelph.
 
-My other interests involve citizen science, ornithology, and photography. I spend much of my free time birdwatching and contributing data to citizen science platforms such as eBird and iNaturalist. One day, I hope to do a big year, whether it be in Ontario, Canada, or Worldwide.
+My research interests lie in ecological modelling and population risk assessment. I worked with [Dr. Daniel Gillis](https://danielgillis.wordpress.com/) and [Dr. Shoshanah Jacobs](https://www.uoguelph.ca/ib/jacobs) on the Great Lakes Piping Plover Biological Modeling Program, which seeks to develop [tools](https://github.com/BrandonEdwards/melodus) to assist in management and recovery of Great Lakes piping plovers (*Charadrius melodus circumcinctus*). You can read more about an 8-month co-op term [here](wt1.html).
+
+In my current co-op term, I am working at the National Wildlife Research Centre in Ottawa, ON as a Bird Population Monitoring analyst. There, I am working with [Dr. Adam Smith](https://carleton.ca/biology/people/adam-smith/) to evaluate the use of a hierarchical generalized additive model (GAM) on improving population trajectories of aerial insectivores. We are also developing an R package to provide a higher ease-of-access hierarchical Bayesian models and Breeding Bird Survey data for other researchers to use.
+
+My other interests are birding, herping, and photography. I spend much of my free time birding and contributing data to citizen science platforms such as eBird and iNaturalist. One day, I hope to do a big year, whether it be in Ontario, Canada, or Worldwide.

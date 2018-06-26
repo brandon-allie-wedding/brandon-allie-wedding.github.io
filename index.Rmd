@@ -3,5 +3,6 @@ title: "Brandon Edwards"
 output:
   html_document:
     includes:
-      in_header: cover.html
+      in_header: index-cover.html
 ---
+Hello! I'm Brandon Edwards. I'm an undergraduate student at the University of Guelph interested in statistics, computer science, and ornithology. [More about me.](about.html)
