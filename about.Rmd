@@ -6,7 +6,7 @@ output:
       in_header: about-cover.html
 ---
 
-I'm a Computer Science and Statistics undergraduate student at the University of Guelph.
+I'm a Mathematical Sciences undergraduate student at the University of Guelph.
 
 My research interests lie in ecological modelling and population risk assessment. I worked with [Dr. Daniel Gillis](https://danielgillis.wordpress.com/) and [Dr. Shoshanah Jacobs](https://www.uoguelph.ca/ib/jacobs) on the Great Lakes Piping Plover Biological Modeling Program, which seeks to develop [tools](https://github.com/BrandonEdwards/melodus) to assist in management and recovery of Great Lakes piping plovers (*Charadrius melodus circumcinctus*). You can read more about an 8-month co-op term [here](wt1.html).
 
