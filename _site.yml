@@ -18,9 +18,6 @@ navbar:
     - text: "Publications"
       icon: fa-pencil
       href: publications.html
-    - text: "Blog"
-      icon: fa-rss
-      href: http://brandonedwards.ca/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 
   right:
     - text: "Contact me"
       icon: fa-envelope-o
