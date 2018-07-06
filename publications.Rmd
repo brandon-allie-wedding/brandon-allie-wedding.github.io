@@ -29,3 +29,5 @@ Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. 2017. Explorin
 **Edwards BPM**, Jacobs S, Gillis D. August 2018. Assessing the effects of beach raking on piping plover reproductive success using an environmental agent-based model. *42nd Annual Waterbirds Society Meeting*, Vancouver, BC. (Accepted Oral Presentation)
 
 **Edwards BPM**, Smith AC. August 2018. Improved population trajectories for North American swallows, swifts, and nightjars with a hierarchical Bayesian GAM. *International Ornithological Congress 2018*, Vancouver, BC. (Accepted Poster)
+
+**Edwards BPM**, Gillis D, Jacobs S. 2018. Citizen scientists and Plover Lovers: how nearly a decade’s worth of data has played a role in saving the endangered piping plover at Sauble Beach. *People, Place & Public Engagement*, St. John’s, NL. (Accepted Oral Presentation)
