@@ -15,6 +15,8 @@ navbar:
         - text: "---------"
         - text: "Work Term 1 & 2"
           href: wt1.html
+        - text: "Work Term 3"
+          href: wt3.html
     - text: "Publications"
       icon: fa-pencil
       href: publications.html
