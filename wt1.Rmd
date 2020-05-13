@@ -27,40 +27,40 @@ This was the research project that I was going to do for my time as a researcher
 # Goals
 Because this co-op term ended up turning into an 8-month contiguous co-op term, I was able to create a variety of small goals that could be achieved within a couple months as well as larger goals that took close to the entire work-term. Some goals had solid deliverables that could be attached with them to show their progress, while the progress for others had to be subjectively evaluated by both myself and Dan.
 
-###Programming Languages
+### Programming Languages
 With this still being a programming-dominated co-op position, I wanted one of my goals to involve the learning of at least one new language. In this case, I decided I wanted to learn **Python**. Python appears to be a popular language used in the scientific programming world, and I figured it would be a useful language to learn. As mentioned above, the main task in this job was to develop an agent-based model; therefore, I decided that I would develop the model using Python, allowing me to fully immerse myself in the language.
 
 In addition to Python, I wanted to get more comfortable using **R**. I had had experience using R in various statistics courses, but it was fairly simple analyses and plotting. I particularly wanted to get more comfortable with subsetting data and creating plot recipes using R's *ggplot2* package. In order to achieve this, I decided that all model analyses would be done using R. At the end of the work term, I would aim to have an analyses library written in R.
 
-###Scientific Communication
+### Scientific Communication
 Since this job was meant to emulate the life of a researcher, it would be imperative for me to increase my scientific communication skills. Scientific communication is important to be able to convey scientific findings to the public in a manner which does not contain jargon. Additionally, scientific communication is important for researchers for funding application through grants.
 
 With this in mind, I wanted to improve three aspects of scientific communication: **written**, **visual**, and **oral**. To improve my written communication, I decided that while I was developing the model and subsequent experiments, I would try to write about it as much as I could. With this writing, I wanted to turn them into sections of what would be seen in a scientific paper, such as abstract, introduction, methods, results, and discussion. These sections would be sent to Dan for him to make any edits for me to revise. An overall deliverable I wanted to get out of this was a scientific paper that I could send to a journal for a chance at publishing.
 
 For visual communication, I planned on submitted scientific posters to two conferences: American Ornithology 2017 and CEPS Undergraduate Poster Session (CUPS). The scientific poster would be used to convey results of the studies that I conducted in a visually attractive way. Hopefully, it might increase the communication and comphrehension of the results. This tied in well with oral communication in that I would have to present these posters. At American Ornithology 2017, I would have to present my poster to hundreds of professional scientists; at CUPS, I would be presenting my poster to judges for a shot at some prizes.
 
-###Time Management
+### Time Management
 I've struggled with time management for quite some time. I therefore wanted to try to use this work-term as an opportunity to improve from my stereotypical "student-thing" of leaving things to the last minute and hurriedly finishing them. It would be important for this work term, too. From the goals above, I've already listed that I would need to develop a model, write analyses for the model, write sections of papers about the model, create research posters, and travel to conferences to actually present the research. Clearly, this work-term was going to be a situation where time management was of utmost importance.
 
 In my Operating Systems class that I took the winter before my co-op term, we were introduced to [Gantt charts](https://en.wikipedia.org/wiki/Gantt_chart). In that case, we were introduced to Gantt charts in the context of process scheduling; however, Gantt charts can clearly be used for project scheduling as well. In order to improve my time management skills, I decided that I would try to make a Gantt chart for all the deliverables I needed to produce. This allowed me to create a visual representation of what a week-to-week workflow would look like to meet the deadlines I needed. It would be a fairly simplistic Gantt chart as it wouldn't show dependences (in hindsight, I should have included dependancies), but it would at least help keep me acountable of knowing what should be done by when.
 
-###Learn the Industry
+### Learn the Industry
 This, in my opinion, was a bit more of an "abstract" goal rather than a goal that could have concrete deliverables. However, I thought it would be imporant to be able to learn what life is actually like in academia. Researchers can often be only depicted when the "cool" scientific discoveries are presented in the news and you see the large group photo of many happy scientists. However, I was quite sure that it wasn't always cool discoveries that were happening during the research process. I wanted to fully immerse myself in even the minutiae of academia to fully understand if I think it would be a proper field for me to pursue. I planned on trying to "achieve" this goal by trying to get myself involved with everything from the literature review process to the grant-writing process to the budgeting process.
 
-#Academic Relation
+# Academic Relation
 As mentioned, I am majoring in Computer Science and minoring in Statistics. Additionally, I am supplementing my major/minor combination with some ecology courses to create an overall "Computational Ecology" major. With that in mind, I don't think it's too much of a stretch to see where this work term fits in with my academic studies. Of course, much of what I had to do on the job was not explicitly taught in class. However, what <i>was</i> taught in class gave at least a foundation to help me better understand what I had to teach myself in order to succeed at this position.
 
-###Computer Science
+### Computer Science
 Object-oriented programming (CIS\*2430), Data Structures (CIS\*2520), and Algorithms (CIS\*3490) were probably the most useful classes for this work term. Object-oriented program was an important part of developing the model. Most of the simulated entities in the model had to be developed with objects in mind, such as piping plover attributes or environmental attributes. While I didn't have to develop the data structures myself (Python provides them), knowing which data structure to use was important for writing an efficient simulation model. This, of course, ties in with the use of the proper algorithm for certain data structures, especially when it came to sorting and searching for elements of a list of elements.
 
-###Statistics
+### Statistics
 Prior to this work term, I had taken three statistics courses. The key takeaways from these classes that I was able to apply to this work term was the use of hypothesis testing and regression. Hypothesis tests mirrored those done in the classroom in that it was usually a simple comparison between two means (i.e. simply using a t-test). Prior to this work-term, I had only delved into linear regression and some small-order polynomial regression. What I ended up needing was logistical regression. While I had to learn that on my own, the background knowledge of linear regression allowed me to better understand what was happening in a logistical regression model run.
 
-###Ecology
+### Ecology
 I hadn't actually taken any ecology courses prior to this work term. I had only decided during this work term that I wanted to start supplementing my major with some ecology courses. Nonetheless, I was able to gain some ecological knowledge, especially when it comes to ecological modelling and some of the submodel that governed the overall eABM that I developed. If I do a work-term similar to this one again, I will have more ecology courses that may benefit me.
 
-#Opportunities
-###American Ornithology 2017
+# Opportunities
+### American Ornithology 2017
 One of the most unique experiences I was able to have during this co-op term was the ability to travel to a conference. Prior to the co-op work term (but when I knew what I was going to be doing for the work-term), I submitted an abstract to [American Ornithology 2017](http://aossco2017.fw.msu.edu/), which was going to be the joint meeting between the American Ornithological Society and Society of Canadian Ornithologists/Société des ornithologistes du Canada, both of which I am a member of. I got notified in late-May that my abstract was accepted for a poster presentation, which meant that I was going to travel to East Lansing, MI at the beginning of August for this conference.
 
 Overall, the conference exceeded my expectations. I was surrounded by so many like-minded scientists, and I found out that "Computational Ecology" was not as exotic of a field as I initially thought. In fact, it was actually a field that was in somewhat of a demand, especially for those that have computer science knowledge. I was able to present my [scientific poster](https://figshare.com/articles/Modelling_habitat_loss_in_Piping_Plovers_using_an_environmental_agent-based_model/5280931) to a variety of scientists who all seemed to find it to be a very interested topic. I made a number of valuable connections that I still chat with from time to time.
@@ -71,15 +71,15 @@ The absolute highlight of the conference actually came at the beginning of the c
 
 That quote stuck with me because I was able to see that I did, in some way, belong at that conference and I did indeed have something important to offer. Everyone in the room had one thing in common: the conservation of birds. Originally, this work term was scheduled as a 4-month term; however, this quote inspired me to continue for the second 4-month block. It sparked the flame of wanting to go to graduate school and wanting to help the conservation of birds using the skills that I gain in computer science.
 
-###CEPS Undergraduate Poster Session
+### CEPS Undergraduate Poster Session
 After American Ornithology 2017, I presented a similar poster at the CEPS Undergraduate Poster Session at the University of Guelph. Instead of presenting to hundreds of people in a more casual environment, this one involved judges that scored your poster and overall presentation. I actually participated in this poster session last year when I was first working for Dan and his team. This year, I came in with the goal of winning either the Best in Department award or one of the Top 3 posters in the session. [Mission accomplished!](img/cups_award.jpg)
 
-###Scientific Paper
+### Scientific Paper
 As mentioned as part of my goals, I was going to improve my written scientific communication by writing sections of a scientific paper thoughout the work-term. These would be submitted to my advisor throughout the term and would be revised throughout.
 
 In the fall 4-month portion of this work term, we invited [Dr. Shoshanah Jacobs](https://www.uoguelph.ca/ib/jacobs) to the team and officially created the Great Lakes Piping Plover Biological Modelling Program. Dr. Jacobs was able to collaborate on the paper sections and add in her biological expertise to the paper. As of writing this, we plan on submitted our paper, entitled "Exploring the Use of Environmental Agent-Based Models on Great Lakes Piping Plovers", to the Journal of Avian Biology. Of course, that doesn't mean that it will be published there, or even at any other journal. However, the fact that a fully written manuscript came out of this work term is much more than I could have asked for.
 
-###Professional Memberships
+### Professional Memberships
 Although I didn't explicitly make a goal for it, I wanted to start getting myself more known in the ornithology community. One way to achieve this was through joining professional societies. The two that I decided to join during my co-op term were the Society of Canadian Ornithologists/Société des ornithologistes (SCO-SOC) du Canada and the Ontario Field Ornithologists (OFO). SCO-SOC allowed me to apply for student awards and travel bursaries where OFO allowed me to connect with some of the very well-known birders of Ontario.
 
 One of the very last tasks I completed for my co-op was applying for a student memebership award through the American Ornithological Society (AOS) for the 2018 pool. This year, I was one of roughly 40 students across the world awarded a student membership for the AOS.
@@ -87,14 +87,14 @@ One of the very last tasks I completed for my co-op was applying for a student m
 ### Future Work
 One of the lesser concrete things I was able to take away from this position was the idea of "never hurting to ask; the worst they can say is 'no'". Using the various connections I made, either through promoting my work or attending conferences, I now have a variety of leads for future co-op positions, many of which will involve ecological modelling of some sort. Many of these came from cold leads; they simply involved me putting myself out there and asking if there was any way I could assist with research given my background and training. I look forward to seeing what these leads may turn into.
 
-#Conclusion
+# Conclusion
 An easy way to sum up this work term is "exceeded expectations". I continually describe my experience that way, but it still holds true. I was happy just to have a co-op job that combined my passion for computer science and ornithology, but to have been able to travel to a conference, create a new research program, and author a scientific paper simply was above and beyond what I expected to get out of this. As I mentioned in my blurb about American Ornithology 2017, I also gained a sense of direction and, as cliche as it may be, a sense of purpose in my undergraduate studies. I found meaning in the work I was doing in the classroom as I was finally able to translate it to real-world issues, and issues I care greatly about. This co-op term has greatly shaped what the rest of my undergraduate career will look like, both in future courses and future co-op terms.
 
 While still a work in progress, I was able to create a model which can simulate breeding piping plovers at Sauble Beach. This model was written fully in Python, a language I was able to learn over this co-op work term. I have made the model open source which you can view [here](https://github.com/BrandonEdwards/melodus). Additionally, I was able to make a collection of analysis scripts in R to analyze the output of the model. This included learning to make some *ggplot2* recipes and creating meaningful plots out of the data. These scripts can be viewed [here](https://github.com/BrandonEdwards/melodus-analysis).
 
 As I discovered, research and the subsequent field of academia is not an easy field. However, at this point, I think I am willing to accept the trials and tribulations of academia, maybe even strive to push for change in some of the tribulations, and start to aim my career directions toward that field.
 
-#Acknowledgements
+# Acknowledgements
 I would like to firstly thank Dr. Daniel Gillis for allowing me to have this amazing opportunity. I would not have been able to achieve any of this without your support. Thank you to Dr. Shoshanah Jacobs, first for accepting the invitiation to join the team, but for also providing your biological expertise and angles. I look forward to continuing to work with both of you!
 
 Thank you to Alicia Fortin from [Plover Lovers](http://ploverlovers.com/), a volunteer organization in Sauble Beach who oversee piping plover monitoring. Alicia and I communicated data back in forth in order to help inform the model and to potentially create a research program with Sauble Beach.
