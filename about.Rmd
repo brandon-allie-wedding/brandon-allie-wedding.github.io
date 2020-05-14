@@ -1,15 +1,24 @@
 ---
-title: "About me"
+title: "About"
 output:
   html_document:
     includes:
       in_header: about-cover.html
 ---
 
-I'm a Mathematical Sciences undergraduate student at the University of Guelph.
+### Applied Statistician
+I am currently a Contract Biostatistician at Environment and Climate Change Canada, developing statistical offsets to account for biases in bird detectability during on- and off-road point count bird surveys.
 
-My research interests lie in ecological modelling and population risk assessment. I worked with [Dr. Daniel Gillis](https://danielgillis.wordpress.com/) and [Dr. Shoshanah Jacobs](https://www.uoguelph.ca/ib/jacobs) on the Great Lakes Piping Plover Biological Modeling Program, which seeks to develop [tools](https://github.com/BrandonEdwards/melodus) to assist in management and recovery of Great Lakes piping plovers (*Charadrius melodus circumcinctus*). You can read more about an 8-month co-op term [here](wt1.html).
+In 2020, I completed my **BSc in Mathematical Science** in the *Statistics* stream, with an emphasis in Computer Science at the [University of Guelph](https://www.uoguelph.ca/). My honours thesis, supervised by [Dr Daniel Gillis](https://danielgillis.wordpress.com/), compared typologies of the Deviance Information Criterion (DIC) within the context of generalized spatial Poisson mixture models. 
 
-In my current co-op term, I am working at the National Wildlife Research Centre in Ottawa, ON as a Bird Population Monitoring analyst. There, I am working with [Dr. Adam Smith](https://carleton.ca/biology/people/adam-smith/) to evaluate the use of a hierarchical generalized additive model (GAM) on improving population trajectories of aerial insectivores. We are also developing an R package to provide a higher ease-of-access hierarchical Bayesian models and Breeding Bird Survey data for other researchers to use.
+Throughout my undergraduate career, I worked as an Undergraduate Research Assistant under the supervision of Dr Gillis and [Dr. Shoshanah Jacobs](https://www.uoguelph.ca/ib/jacobs). I developed the Great Lakes Piping Plover Biological Modeling Program, which seeks to create [tools](https://github.com/BrandonEdwards/melodus) to assist in management and recovery of Great Lakes piping plovers (*Charadrius melodus circumcinctus*). You can read more about an 8-month co-op term [here](wt1.html).
 
-My other interests are birding, herping, and photography. I spend much of my free time birding and contributing data to citizen science platforms such as eBird and iNaturalist. One day, I hope to do a big year, whether it be in Ontario, Canada, or Worldwide.
+### Amateur Naturalist
+
+When I'm not cranking out R code, I am exploring the world around me. My main passion lies in ornithology, and my free time is often spent birding. I am a self-proclaimed eBird fanboy; you can find my eBird profile [here](https://ebird.org/profile/NjA1NTU0/CA-ON) (you may need an eBird account)! Birding with people of many other interests has allowed me to expand my own interests into the world of herps, moths, odes, and wildflowers. 
+
+At night, my focus turns to the skies, with astronomy being an interest of mine since I was 5 years old. My main interests are fireball reporting and Deep Sky Object hunting, and I have been slowly getting into astrophotography.
+
+While statistics and computer science will be at the forefront of my academic research, I hope to also be able to contribute to natural history research through my amateur field observations.
+
+### Contact Me

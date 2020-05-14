@@ -5,4 +5,4 @@ output:
     includes:
       in_header: index-cover.html
 ---
-Hello! I'm Brandon Edwards. I'm a trained applied statistician and amateur naturalist, and currently between degree programs. [More about me.](about.html)
+Hello! I'm Brandon Edwards. I'm an applied statistician and amateur naturalist, and currently between degree programs. [More about me.](about.html)
