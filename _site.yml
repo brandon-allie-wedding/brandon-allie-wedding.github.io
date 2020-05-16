@@ -14,9 +14,6 @@ navbar:
       icon: fa-pencil
       href: publications.html
   right:
-    - text: "Contact me"
-      icon: fa-envelope-o
-      href: mailto:edwardsb@uoguelph.ca                    # CHANGE HERE 
     - icon: fa-github
       href: https://github.com/BrandonEdwards      # CHANGE HERE 
     - icon: fa-linkedin

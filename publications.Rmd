@@ -6,28 +6,28 @@ output:
       in_header: publications-cover.html
 ---
 
-Gillis D, **Edwards BPM**. 2019. The utility of joinpoint regression for estimating population parameters given changes in population structure. *Heliyon* 5(11), e02515. [doi:j.heliyon.2019.e02515](https://doi.org/10.1016/j.heliyon.2019.e02515)
+Gillis D, **Edwards BPM**. 2019. The utility of joinpoint regression for estimating population parameters given changes in population structure. *Heliyon* 5(11), e02515. https://doi.org/10.1016/j.heliyon.2019.e02515
 
-Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. 2017. Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *2017 IEEE Canada International Humanitarian Technology Conference (IHTC)*, 85-89. [doi:10.1109/IHTC.2017.8058206](https://doi.org/10.1109/IHTC.2017.8058206)
+Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. 2017. Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *2017 IEEE Canada International Humanitarian Technology Conference (IHTC)*, 85-89. https://doi.org/10.1109/IHTC.2017.8058206
 
 [Google Scholar Profile](https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&hl=en)
 
-## Conferences Presentations
-**Edwards BPM**, Jacobs S, Gillis D. 2018. Digital Plovers: Informing management decisions of endangered Piping Plovers using an environmental agent-based model. *National Integrative Research Conference 2018*, Montréal, QC. (Oral Presentation & Poster)
+## Invited Symposia
+**Edwards BPM**, Smith AC, Hudson M-AR, Francis CM, Pardieck KL, Ziolkowski Jr DJ. (August 2020). Open, accessible, and customizable analysis of North American Breeding Bird Survey data using the R package bbsBayes. *7th North American Ornithological Conference* (Symposium: Back to the future of the breeding bird survey), Virtual Conference. 
 
-**Edwards BPM**, Jacobs S, Gillis D. 2017. Modelling breeding success of Piping Plovers using an environmental agent-based model. *British Ornithologists’ Union 2017 Twitter Conference.* (Twitter Conference)
+**Edwards BPM**, Smith AC, Hudson M-AR, Francis CM, Pardieck KL, Ziolkowski Jr DJ. (August 2019). bbsBayes: An R Package for Hierarchical Bayesian Modelling of Breeding Bird Survey Data. *Society of Canadian Ornithologists Annual Meeting* (Symposium: R for Ornithologists: Perspectives from UseRs to programmeRs), Quebec City, QC. 
 
-**Edwards BPM**, Gillis D. 2017. Using environmental agent-based modelling to simulate the breeding success of piping plovers. *CEPS Undergraduate Poster Session*, Guelph, ON. (Poster)
+## Workshops
+**Edwards BPM**, Smith AC. (August 2020). Modeling population change with the BBS data using bbsBayes: An R-package for customized hierarchical Bayesian modeling of population change from the North American Breeding Bird Survey. *7th North American Ornithological Conference* (Full Day workshop), Virtual Conference.
 
-**Edwards BPM**, Gillis D. 2017. Modelling habitat loss in Piping Plovers using an environmental agent-based model. *American Ornithology 2017*, Lansing, MI. (Poster)
+## Select Conference Presentations
+**Edwards BPM**, Jacobs S, Gillis D. (June 2019). Risk Assessment of Great Lakes piping plovers using eABM: An R package to run Environment Agent-based Models. *American Ornithology 2019*, Anchorage, AK.
 
-Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. 2017. Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *IEEE International Humanitarian Technology Conference*, Guelph, ON. (Oral Presentation)
+**Edwards BPM**, Jacobs S, Gillis D. (August 2018). Assessing the effects of beach raking on piping plover reproductive success using an environmental agent-based model. *42nd Annual Waterbirds Society Meeting*, Vancouver, BC. (Accepted Oral Presentation)
 
-**Edwards B**, Rose D, Requejo F, Rollins E, Kett R, Gillis D. 2016. Improving efficiency of traditional agent-based models to investigate anthropogenic activities on a wild fish population. *CPES Undergraduate Poster Session*, Guelph, ON. (Poster)
+**Edwards BPM**, Smith AC. (August 2018). Improved population trajectories for North American swallows, swifts, and nightjars with a hierarchical Bayesian GAM. *International Ornithological Congress 2018*, Vancouver, BC. (Accepted Poster)
 
-### Upcoming
-**Edwards BPM**, Jacobs S, Gillis D. August 2018. Assessing the effects of beach raking on piping plover reproductive success using an environmental agent-based model. *42nd Annual Waterbirds Society Meeting*, Vancouver, BC. (Accepted Oral Presentation)
+**Edwards BPM**, Gillis D. (August 2017). Modelling habitat loss in Piping Plovers using an environmental agent-based model. *American Ornithology 2017*, Lansing, MI. (Poster)
 
-**Edwards BPM**, Smith AC. August 2018. Improved population trajectories for North American swallows, swifts, and nightjars with a hierarchical Bayesian GAM. *International Ornithological Congress 2018*, Vancouver, BC. (Accepted Poster)
+Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. (July 2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *IEEE International Humanitarian Technology Conference*, Guelph, ON. (Oral Presentation)
 
-**Edwards BPM**, Gillis D, Jacobs S. 2018. Citizen scientists and Plover Lovers: how nearly a decade’s worth of data has played a role in saving the endangered piping plover at Sauble Beach. *People, Place & Public Engagement*, St. John’s, NL. (Accepted Oral Presentation)
