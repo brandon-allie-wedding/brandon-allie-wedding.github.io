@@ -5,6 +5,9 @@ output:
     includes:
       in_header: software-cover.html
 ---
+Much of my software development and run-of-the-mill coding these days is done in **R**, with assists from probabilistic languages such as **JAGS**. I do have previous experience with developing in **C**, **Python**, and **Julia**, and I am constantly working to keep up-to-date on evolving technologies, especially as it pertains to adding efficiency to computationally heavy processes.
+
+Below are select pieces of software that I have developed for research purposes. Where possible, I've included links to research papers that have used the software.
 
 ## bbsBayes
 [https://github.com/BrandonEdwards/bbsBayes](https://github.com/BrandonEdwards/bbsBayes)
@@ -26,4 +29,8 @@ Python implementation of an environment agent-based model. Simulate nesting and 
 ## FishEBM.jl
 [https://github.com/BrandonEdwards/FishEBM.jl](https://github.com/BrandonEdwards/FishEBM.jl)
 
-Julia package containing functions to simulate the life cycle dynamics of managed fisheries. A fish population is divided into two components: adults and pre-recruits. Adults have age-specific survivorship, are harvested with age specific catchability, and spawn with age specific sexual maturity and fecundity. Agents graduate between several life stages, move, and face multiple forms of stage and location specific mortality. The model is a detailed and computationally intensive agent based model that does not track each individual agent, instead the environment is monitored while agents move throughout the chosen environment. This simulation tool is well suited for investigation of spatial risks in managed populations, where population level impacts may only be observable through changes in harvest. See also [Rose et al. 2017.](https://ieeexplore.ieee.org/abstract/document/8058206)
+**Research using this software:** 
+
+* [Rose et al. 2017](https://ieeexplore.ieee.org/abstract/document/8058206)
+
+Julia package containing functions to simulate the life cycle dynamics of managed fisheries. A fish population is divided into two components: adults and pre-recruits. Adults have age-specific survivorship, are harvested with age specific catchability, and spawn with age specific sexual maturity and fecundity. Agents graduate between several life stages, move, and face multiple forms of stage and location specific mortality. The model is a detailed and computationally intensive agent based model that does not track each individual agent, instead the environment is monitored while agents move throughout the chosen environment. This simulation tool is well suited for investigation of spatial risks in managed populations, where population level impacts may only be observable through changes in harvest.
