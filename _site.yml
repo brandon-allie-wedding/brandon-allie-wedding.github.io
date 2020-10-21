@@ -13,13 +13,16 @@ navbar:
     - text: "Publications"
       icon: fa-pencil
       href: publications.html
+#    - text: "Posts"
+#      icon: fa-pencil
+#      href: posts.html
   right:
     - icon: fa-github
       href: https://github.com/BrandonEdwards      # CHANGE HERE 
     - icon: fa-linkedin
       href: https://www.linkedin.com/in/brandonpmedwards/
-    - icon: fa-twitter
-      href: https://twitter.com/bedwards144
+#    - icon: fa-twitter
+ #     href: https://twitter.com/bedwards144
 output:
   html_document:
     theme: cosmo

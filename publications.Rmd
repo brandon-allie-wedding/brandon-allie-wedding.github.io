@@ -10,24 +10,26 @@ Gillis D, **Edwards BPM**. 2019. The utility of joinpoint regression for estimat
 
 Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. 2017. Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *2017 IEEE Canada International Humanitarian Technology Conference (IHTC)*, 85-89. https://doi.org/10.1109/IHTC.2017.8058206
 
+### Preprints
+**Edwards BPM**, Smith AC. 2020. bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. bioRxiv, 25 pp. https://doi.org/10.1101/2020.05.27.118901
+
+Smith AC, **Edwards BPM**. 2020. North American Breeding Bird Survey status and trend estimates to inform a wide-range of conservation needs, using a flexible Bayesian hierarchical generalized additive model. bioRxiv, 50 pp. https://doi.org/10.1101/2020.03.26.010215
+
 [Google Scholar Profile](https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&hl=en)
 
 ## Invited Symposia
-**Edwards BPM**, Smith AC, Hudson M-AR, Francis CM, Pardieck KL, Ziolkowski Jr DJ. (August 2020). Open, accessible, and customizable analysis of North American Breeding Bird Survey data using the R package bbsBayes. *7th North American Ornithological Conference* (Symposium: Back to the future of the breeding bird survey), Virtual Conference. 
+**Edwards BPM**, Smith AC. (August 2020). Open, accessible, and customizable analysis of North American Breeding Bird Survey data using the R package bbsBayes. *7th North American Ornithological Conference* (Symposium: Back to the future of the breeding bird survey), Virtual Conference. 
 
 **Edwards BPM**, Smith AC, Hudson M-AR, Francis CM, Pardieck KL, Ziolkowski Jr DJ. (August 2019). bbsBayes: An R Package for Hierarchical Bayesian Modelling of Breeding Bird Survey Data. *Society of Canadian Ornithologists Annual Meeting* (Symposium: R for Ornithologists: Perspectives from UseRs to programmeRs), Quebec City, QC. 
 
-## Workshops
-**Edwards BPM**, Smith AC. (August 2020). Modeling population change with the BBS data using bbsBayes: An R-package for customized hierarchical Bayesian modeling of population change from the North American Breeding Bird Survey. *7th North American Ornithological Conference* (Full Day workshop), Virtual Conference.
-
 ## Select Conference Presentations
-**Edwards BPM**, Jacobs S, Gillis D. (June 2019). Risk Assessment of Great Lakes piping plovers using eABM: An R package to run Environment Agent-based Models. *American Ornithology 2019*, Anchorage, AK.
+**Edwards BPM**, Jacobs S, Gillis D. (June 2019). Risk Assessment of Great Lakes piping plovers using eABM: An R package to run Environment Agent-based Models. *American Ornithology 2019*, Anchorage, AK. (Paper)
 
-**Edwards BPM**, Jacobs S, Gillis D. (August 2018). Assessing the effects of beach raking on piping plover reproductive success using an environmental agent-based model. *42nd Annual Waterbirds Society Meeting*, Vancouver, BC. (Accepted Oral Presentation)
+**Edwards BPM**, Jacobs S, Gillis D. (August 2018). Assessing the effects of beach raking on piping plover reproductive success using an environmental agent-based model. *42nd Annual Waterbirds Society Meeting*, Vancouver, BC. (Paper)
 
-**Edwards BPM**, Smith AC. (August 2018). Improved population trajectories for North American swallows, swifts, and nightjars with a hierarchical Bayesian GAM. *International Ornithological Congress 2018*, Vancouver, BC. (Accepted Poster)
+**Edwards BPM**, Smith AC. (August 2018). Improved population trajectories for North American swallows, swifts, and nightjars with a hierarchical Bayesian GAM. *International Ornithological Congress 2018*, Vancouver, BC. (Poster)
 
 **Edwards BPM**, Gillis D. (August 2017). Modelling habitat loss in Piping Plovers using an environmental agent-based model. *American Ornithology 2017*, Lansing, MI. (Poster)
 
-Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. (July 2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *IEEE International Humanitarian Technology Conference*, Guelph, ON. (Oral Presentation)
+Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. (July 2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *IEEE International Humanitarian Technology Conference*, Guelph, ON. (Paper)
 
