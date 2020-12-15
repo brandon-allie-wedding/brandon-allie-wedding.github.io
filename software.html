@@ -22,9 +22,20 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <div><img src="img/gcsp.jpg" width="100%" align="center"></div>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -328,7 +339,7 @@ $(document).ready(function () {
 <div id="bbsbayes" class="section level2">
 <h2>bbsBayes</h2>
 <p><a href="https://github.com/BrandonEdwards/bbsBayes">https://github.com/BrandonEdwards/bbsBayes</a></p>
-<p><a href="https://travis-ci.org/BrandonEdwards/bbsBayes"><img src="https://travis-ci.org/BrandonEdwards/bbsBayes.svg?branch=master" alt="Build Status" /></a> <a href="https://cran.r-project.org/package=bbsBayes"><img src="http://www.r-pkg.org/badges/version/bbsBayes" alt="CRAN_Status_Badge" /></a> <a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle" /></a></p>
+<p><a href="https://cran.r-project.org/package=bbsBayes"><img src="http://www.r-pkg.org/badges/version/bbsBayes" alt="CRAN_Status_Badge" /></a> <a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle" /></a></p>
 <p><strong>Research using this software:</strong></p>
 <ul>
 <li><a href="https://doi.org/10.1101/2020.03.26.010215">Smith and Edwards 2020</a></li>
@@ -361,7 +372,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
