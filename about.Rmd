@@ -7,7 +7,7 @@ output:
 ---
 
 ## Applied Statistician
-I am currently an MSc at Carleton University, co-supervised by Drs [Adam Smith](https://carleton.ca/biology/people/adam-smith/) and [Joe Bennett](https://carleton.ca/biology/people/joseph-bennett/). I am also a part-time Contract Biostatistician at Environment and Climate Change Canada, developing statistical offsets to account for biases in bird detectability during on- and off-road point count bird surveys.
+I am currently an MSc Student at Carleton University, co-supervised by Drs [Adam Smith](https://carleton.ca/biology/people/adam-smith/) and [Joe Bennett](https://carleton.ca/biology/people/joseph-bennett/). I am investigating methods to calculating detectability functions for all North American landbird species, and to use those detectability functions as a way to integrate disparate bird survey data sets to improve status and trend estimates. I am the lead analyst on the [NA-POPS project](https://na-pops.org), which is a collaboration between numerous agencies to make this project possible.
 
 In 2020, I completed my **BSc in Mathematical Science** in the *Statistics* stream, with an emphasis in Computer Science at the [University of Guelph](https://www.uoguelph.ca/). My honours thesis, supervised by [Dr Daniel Gillis](https://danielgillis.wordpress.com/), compared typologies of the Deviance Information Criterion (DIC) within the context of generalized spatial Poisson mixture models. 
 
