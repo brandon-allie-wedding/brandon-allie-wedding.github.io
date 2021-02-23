@@ -22,9 +22,20 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <div><img src="img/rwbl.jpg" width="100%" align="center"></div>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -295,6 +306,13 @@ $(document).ready(function () {
     Publications
   </a>
 </li>
+<li>
+  <a href="photography.html">
+    <span class="fa fa-camera"></span>
+     
+    Photography
+  </a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -323,12 +341,13 @@ $(document).ready(function () {
 </div>
 
 
-<p>Smith AC, <strong>Edwards BPM</strong>. (Accepted). North American Breeding Bird Survey status and trend estimates to inform a wide-range of conservation needs, using a flexible Bayesian hierarchical generalized additive model. To appear in <em>Ornithological Applications</em>, 50 pp. Preprint: <a href="https://doi.org/10.1101/2020.03.26.010215" class="uri">https://doi.org/10.1101/2020.03.26.010215</a></p>
-<p>Gillis D, <strong>Edwards BPM</strong>. 2019. The utility of joinpoint regression for estimating population parameters given changes in population structure. <em>Heliyon</em> 5(11), e02515. <a href="https://doi.org/10.1016/j.heliyon.2019.e02515" class="uri">https://doi.org/10.1016/j.heliyon.2019.e02515</a></p>
-<p>Rose D, <strong>Edwards BPM</strong>, Kett R, Yodzis M, Angevaare J, Gillis D. 2017. Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. <em>2017 IEEE Canada International Humanitarian Technology Conference (IHTC)</em>, 85-89. <a href="https://doi.org/10.1109/IHTC.2017.8058206" class="uri">https://doi.org/10.1109/IHTC.2017.8058206</a></p>
+<p>Smith AC, <strong>Edwards BPM</strong>. (2020). North American Breeding Bird Survey status and trend estimates to inform a wide-range of conservation needs, using a flexible Bayesian hierarchical generalized additive model. <em>Ornithological Applications</em>. <a href="https://doi.org/10.1093/ornithapp/duaa065" class="uri">https://doi.org/10.1093/ornithapp/duaa065</a></p>
+<p>Gillis D, <strong>Edwards BPM</strong>. (2019). The utility of joinpoint regression for estimating population parameters given changes in population structure. <em>Heliyon</em> 5(11), e02515. <a href="https://doi.org/10.1016/j.heliyon.2019.e02515" class="uri">https://doi.org/10.1016/j.heliyon.2019.e02515</a></p>
+<p>Rose D, <strong>Edwards BPM</strong>, Kett R, Yodzis M, Angevaare J, Gillis D. (2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. <em>2017 IEEE Canada International Humanitarian Technology Conference (IHTC)</em>, 85-89. <a href="https://doi.org/10.1109/IHTC.2017.8058206" class="uri">https://doi.org/10.1109/IHTC.2017.8058206</a></p>
 <div id="preprints" class="section level3">
 <h3>Preprints</h3>
-<p><strong>Edwards BPM</strong>, Smith AC. 2020. bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. bioRxiv, 25 pp. <a href="https://doi.org/10.1101/2020.05.27.118901" class="uri">https://doi.org/10.1101/2020.05.27.118901</a></p>
+<p>Cooke SJ, Soroye P, Brooks JL, Clarke J, Jeanson AL, Berberi A, Piczak ML, Reid CH, Desforges JE, Guay JD, Drake AK, Jardine AM, Ethier JP, Keefe HE, Medd AM, <strong>Edwards BPM</strong>, et al. (2020). Ten considerations for conservation policy makers for the post-COVID-19 transition. EcoEvoRxiv, 15 pp. <a href="https://doi.org/10.32942/osf.io/6wn7v" class="uri">https://doi.org/10.32942/osf.io/6wn7v</a></p>
+<p><strong>Edwards BPM</strong>, Smith AC. (2020). bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. bioRxiv, 25 pp. <a href="https://doi.org/10.1101/2020.05.27.118901" class="uri">https://doi.org/10.1101/2020.05.27.118901</a></p>
 <p><a href="https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&amp;hl=en">Google Scholar Profile</a></p>
 </div>
 <div id="invited-symposia" class="section level2">
@@ -354,7 +373,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

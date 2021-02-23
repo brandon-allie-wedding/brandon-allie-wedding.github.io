@@ -17,7 +17,7 @@ Below are select pieces of software that I have developed for research purposes.
 
 **Research using this software:** 
 
-* [Smith and Edwards 2020](https://doi.org/10.1101/2020.03.26.010215)
+* [Smith and Edwards 2020](https://doi.org/10.1093/ornithapp/duaa065)
 * [Edwards and Smith 2020](https://doi.org/10.1101/2020.05.27.118901)
 
 Perform hierarchical Bayesian analysis of North American Breeding Bird Survey (BBS) data. 'bbsBayes' will run a full model analysis for one or more species that you choose, or you can take more control and specify how the data should be stratified, prepared for JAGS, or modelled. 
