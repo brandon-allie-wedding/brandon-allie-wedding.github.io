@@ -5,14 +5,15 @@ output:
     includes:
       in_header: publications-cover.html
 ---
-Smith AC, **Edwards BPM**. (2020). North American Breeding Bird Survey status and trend estimates to inform a wide-range of conservation needs, using a flexible Bayesian hierarchical generalized additive model. *Ornithological Applications*. https://doi.org/10.1093/ornithapp/duaa065
+Cooke SJ, Soroye P, Brooks JL, Clarke J, Jeanson AL, Berberi A, Piczak ML, Reid CH, Desforges JE, Guay JD, Drake AK, Jardine AM, Ethier JP, Keefe HE, Medd AM, **Edwards BPM**, et al. (2021). Ten considerations for conservation policy makers for the post-COVID-19 transition. *Environmental Reviews*. https://doi.org/10.1139/er-2021-0014
+
+Smith AC, **Edwards BPM**. (2021). North American Breeding Bird Survey status and trend estimates to inform a wide-range of conservation needs, using a flexible Bayesian hierarchical generalized additive model. *Ornithological Applications*. https://doi.org/10.1093/ornithapp/duaa065
 
 Gillis D, **Edwards BPM**. (2019). The utility of joinpoint regression for estimating population parameters given changes in population structure. *Heliyon* 5(11), e02515. https://doi.org/10.1016/j.heliyon.2019.e02515
 
 Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. (2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *2017 IEEE Canada International Humanitarian Technology Conference (IHTC)*, 85-89. https://doi.org/10.1109/IHTC.2017.8058206
 
 ### Preprints
-Cooke SJ, Soroye P, Brooks JL, Clarke J, Jeanson AL, Berberi A, Piczak ML, Reid CH, Desforges JE, Guay JD, Drake AK, Jardine AM, Ethier JP, Keefe HE, Medd AM, **Edwards BPM**, et al. (2020). Ten considerations for conservation policy makers for the post-COVID-19 transition. EcoEvoRxiv, 15 pp. https://doi.org/10.32942/osf.io/6wn7v
 
 **Edwards BPM**, Smith AC. (2020). bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. bioRxiv, 25 pp. https://doi.org/10.1101/2020.05.27.118901
 
