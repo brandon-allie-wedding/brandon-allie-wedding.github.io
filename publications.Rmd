@@ -5,6 +5,9 @@ output:
     includes:
       in_header: publications-cover.html
 ---
+
+**Edwards BPM**, Smith AC. (2020). bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. *Journal of Open Research Software* (Forthcoming). Preprint: https://doi.org/10.1101/2020.05.27.118901
+
 Cooke SJ, Soroye P, Brooks JL, Clarke J, Jeanson AL, Berberi A, Piczak ML, Reid CH, Desforges JE, Guay JD, Drake AK, Jardine AM, Ethier JP, Keefe HE, Medd AM, **Edwards BPM**, et al. (2021). Ten considerations for conservation policy makers for the post-COVID-19 transition. *Environmental Reviews*. https://doi.org/10.1139/er-2021-0014
 
 Smith AC, **Edwards BPM**. (2021). North American Breeding Bird Survey status and trend estimates to inform a wide-range of conservation needs, using a flexible Bayesian hierarchical generalized additive model. *Ornithological Applications*. https://doi.org/10.1093/ornithapp/duaa065
@@ -13,9 +16,6 @@ Gillis D, **Edwards BPM**. (2019). The utility of joinpoint regression for estim
 
 Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. (2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *2017 IEEE Canada International Humanitarian Technology Conference (IHTC)*, 85-89. https://doi.org/10.1109/IHTC.2017.8058206
 
-### Preprints
-
-**Edwards BPM**, Smith AC. (2020). bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. bioRxiv, 25 pp. https://doi.org/10.1101/2020.05.27.118901
 
 [Google Scholar Profile](https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&hl=en)
 
