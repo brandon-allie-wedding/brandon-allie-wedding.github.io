@@ -8,7 +8,7 @@ output:
 
 ## Applied Statistician
 
-I am currently an MSc Student at Carleton University, co-supervised by Drs [Adam Smith](https://carleton.ca/biology/people/adam-smith/) and [Joe Bennett](https://carleton.ca/biology/people/joseph-bennett/). My research focuses on improving estimates of bird population sizes via detectability offsets. I am currently lead analyst on the [NA-POPS project](http://na-pops.org/), which is seeking to develop an open-access database of detectability functions to account for biases in bird detectability during on- and off-road point count bird surveys. I use R and Stan to develop multi-species Bayesian hierarchical removal and distance models to generate estimates of a bird species' availability and detectability, given a number of seasonal and spatial covariates.
+I am currently an PhD Candidate at Carleton University, co-supervised by Drs [Adam Smith](https://carleton.ca/biology/people/adam-smith/) and [Joe Bennett](https://carleton.ca/biology/people/joseph-bennett/). My research focuses on improving estimates of bird population sizes via detectability offsets. I am currently lead analyst on the [NA-POPS project](http://na-pops.org/), which is seeking to develop an open-access database of detectability functions to account for biases in bird detectability during on- and off-road point count bird surveys. I use R and Stan to develop multi-species Bayesian hierarchical removal and distance models to generate estimates of a bird species' availability and detectability, given a number of seasonal and spatial covariates.
 
 In 2020, I completed my **BSc in Mathematical Science** in the *Statistics* stream, with an emphasis in Computer Science at the [University of Guelph](https://www.uoguelph.ca/). My honours thesis, supervised by [Dr Daniel Gillis](https://danielgillis.wordpress.com/), compared typologies of the Deviance Information Criterion (DIC) within the context of generalized spatial Poisson mixture models. 
 
@@ -18,9 +18,7 @@ I also completed a [4-month co-op term](wt3.html) working as a Bird Population M
 
 ## Amateur Naturalist & Nature Photographer
 
-When I'm not cranking out R code, I am exploring the world around me. My main passion lies in ornithology, and my free time is often spent birding. I contribute as much of my birding as I can to citizen science; you can find my eBird profile [here](https://ebird.org/profile/NjA1NTU0/CA-ON) (you may need an eBird account)! Birding with people of many other interests has allowed me to expand my own interests into the world of herps, moths, odes, and wildflowers.
-
-This exploration of the natural world has provided an excellent opportunity for me to hone in photographing the biodiversity around us. My primary subject is birds, however I often delve into photographing mammals and herps when the opportunities present. You can see some of my work [here](photography.html).
+When I'm not in front of a computer screen writing code, I am exploring the world around me. My main passion lies in ornithology, and my free time is often spent birding. I contribute as much of my birding as I can to citizen science; you can find my eBird profile [here](https://ebird.org/profile/NjA1NTU0/CA-ON) (you may need an eBird account)! Birding with people of many other interests has allowed me to expand my own interests into the world of herps, moths, odes, and wildflowers.
 
 While statistics and computer science will be at the forefront of my academic research, I hope to also be able to contribute to natural history research through my amateur field observations.
 

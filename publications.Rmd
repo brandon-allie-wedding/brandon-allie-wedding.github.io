@@ -6,11 +6,11 @@ output:
       in_header: publications-cover.html
 ---
 
-**Edwards BPM**, Smith AC. (2020). bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. *Journal of Open Research Software* (Forthcoming). Preprint: https://doi.org/10.1101/2020.05.27.118901
+**Edwards BPM**, Smith AC. (2021). bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. *Journal of Open Research Software* 9(1). http://doi.org/10.5334/jors.329
 
-Cooke SJ, Soroye P, Brooks JL, Clarke J, Jeanson AL, Berberi A, Piczak ML, Reid CH, Desforges JE, Guay JD, Drake AK, Jardine AM, Ethier JP, Keefe HE, Medd AM, **Edwards BPM**, et al. (2021). Ten considerations for conservation policy makers for the post-COVID-19 transition. *Environmental Reviews*. https://doi.org/10.1139/er-2021-0014
+Cooke SJ, Soroye P, Brooks JL, Clarke J, Jeanson AL, Berberi A, Piczak ML, Reid CH, Desforges JE, Guay JD, Drake AK, Jardine AM, Ethier JP, Keefe HE, Medd AM, **Edwards BPM**, et al. (2021). Ten considerations for conservation policy makers for the post-COVID-19 transition. *Environmental Reviews* 29(999). https://doi.org/10.1139/er-2021-0014
 
-Smith AC, **Edwards BPM**. (2021). North American Breeding Bird Survey status and trend estimates to inform a wide-range of conservation needs, using a flexible Bayesian hierarchical generalized additive model. *Ornithological Applications*. https://doi.org/10.1093/ornithapp/duaa065
+Smith AC, **Edwards BPM**. (2021). North American Breeding Bird Survey status and trend estimates to inform a wide-range of conservation needs, using a flexible Bayesian hierarchical generalized additive model. *Ornithological Applications* 123(1). https://doi.org/10.1093/ornithapp/duaa065
 
 Gillis D, **Edwards BPM**. (2019). The utility of joinpoint regression for estimating population parameters given changes in population structure. *Heliyon* 5(11), e02515. https://doi.org/10.1016/j.heliyon.2019.e02515
 
@@ -25,6 +25,8 @@ Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. (2017). Explor
 **Edwards BPM**, Smith AC, Hudson M-AR, Francis CM, Pardieck KL, Ziolkowski Jr DJ. (August 2019). bbsBayes: An R Package for Hierarchical Bayesian Modelling of Breeding Bird Survey Data. *Society of Canadian Ornithologists Annual Meeting* (Symposium: R for Ornithologists: Perspectives from UseRs to programmeRs), Quebec City, QC. 
 
 ## Select Conference Presentations
+**Edwards BPM**, Smith AC, NA-POPS Team. (August 2021). Point count offsets for population sizes of North American landbirds. *American Ornithology 2021*, Virtual. (Paper)
+
 **Edwards BPM**, Jacobs S, Gillis D. (June 2019). Risk Assessment of Great Lakes piping plovers using eABM: An R package to run Environment Agent-based Models. *American Ornithology 2019*, Anchorage, AK. (Paper)
 
 **Edwards BPM**, Jacobs S, Gillis D. (August 2018). Assessing the effects of beach raking on piping plover reproductive success using an environmental agent-based model. *42nd Annual Waterbirds Society Meeting*, Vancouver, BC. (Paper)

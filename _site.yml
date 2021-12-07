@@ -13,9 +13,6 @@ navbar:
     - text: "Publications"
       icon: fa-pencil
       href: publications.html
-    - text: "Photography"
-      icon: fa-camera
-      href: photography.html
   right:
     - icon: fa-github
       href: https://github.com/BrandonEdwards      # CHANGE HERE 
