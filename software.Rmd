@@ -5,9 +5,16 @@ output:
     includes:
       in_header: software-cover.html
 ---
-Much of my software development and run-of-the-mill coding these days is done in **R**, with assists from probabilistic languages such as **JAGS**. I do have previous experience with developing in **C**, **Python**, and **Julia**, and I am constantly working to keep up-to-date on evolving technologies, especially as it pertains to adding efficiency to computationally heavy processes.
+Much of my software development and run-of-the-mill coding these days is done in **R**, with assists from probabilistic languages such as **Stan** and **JAGS**. I do have previous experience with developing in **C**, **Python**, and **Julia**, and I am constantly working to keep up-to-date on evolving technologies, especially as it pertains to adding efficiency to computationally heavy processes.
 
 Below are select pieces of software that I have developed for research purposes. Where possible, I've included links to research papers that have used the software.
+
+## napops
+[https://github.com/na-pops/napops](https://github.com/na-pops/napops)
+
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+
+This package provides an R interface for users to download results from the NA-POPS database housed on Github. Users can access estimates of effective detection radius, cue rate, and detection probability for more than 300 species of North American landbirds.
 
 ## bbsBayes
 [https://github.com/BrandonEdwards/bbsBayes](https://github.com/BrandonEdwards/bbsBayes)
@@ -15,8 +22,11 @@ Below are select pieces of software that I have developed for research purposes.
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/bbsBayes)](https://cran.r-project.org/package=bbsBayes)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 
-**Research using this software:** 
+**Example research using this software:** 
 
+* [Imlay et al. 2022](https://doi.org/10.1139/cjz-2021-0207)
+* [English et al. 2021](https://doi.org/10.1038/s41598-021-97889-x)
+* [Allen and Lockwood 2021](https://doi.org/10.1111/cobi.13662)
 * [Smith and Edwards 2021](https://doi.org/10.1093/ornithapp/duaa065)
 * [Edwards and Smith 2021](https://doi.org/10.1101/2020.05.27.118901)
 

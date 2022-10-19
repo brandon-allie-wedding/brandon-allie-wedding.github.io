@@ -5,6 +5,17 @@ output:
     includes:
       in_header: publications-cover.html
 ---
+[Google Scholar Profile](https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&hl=en)
+
+Crystal-Ornelas R, **Edwards BPM**, Hébert K, Hudgins EJ, Sánchez-Reyes LL, Scott ER, Grainger M, …, Braga PHP. Not Just for Programmers: How Github Can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. *Preprint*: https://doi.org/10.31222/osf.io/x3p2q  
+
+Soroye P, **Edwards BPM**, Buxton RT, Ethier JP, Frempong-Manso A, Keefe H, Berberi A, Roach-Krajewski M, Binley AD, Vincent JG, Cooke SJ, Bennett JR. (2022). The perils and promise of community science for threatened species monitoring. *Conservation Science and Practice*, e12788. https://doi.org/10.1111/csp2.12788 
+
+**Edwards BPM**, Binley AD, English WB, Hudgins EJ, Snow SS. (2022). A highly anomalous Red-winged Blackbird (Agelaius phoeniceus) song. *Canadian Field-Naturalist* 136(1):1-4. https://doi.org/10.22621/cfn.v136i1.2877 
+
+**Edwards BPM**, Watson AP, Earley CG. (2022). The University of Guelph’s Arboretum Winter Bird Count, 1980 –2022. *Ontario Birds* 40(1):43-56.
+
+**Edwards BPM**, Bouman M. (2022). A possible Canvasback X Ruddy Duck hybrid. *Ontario Birds* 40(1):23-27.
 
 **Edwards BPM**, Smith AC. (2021). bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. *Journal of Open Research Software* 9(1). http://doi.org/10.5334/jors.329
 
@@ -17,14 +28,16 @@ Gillis D, **Edwards BPM**. (2019). The utility of joinpoint regression for estim
 Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. (2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *2017 IEEE Canada International Humanitarian Technology Conference (IHTC)*, 85-89. https://doi.org/10.1109/IHTC.2017.8058206
 
 
-[Google Scholar Profile](https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&hl=en)
-
 ## Invited Symposia
 **Edwards BPM**, Smith AC. (August 2020). Open, accessible, and customizable analysis of North American Breeding Bird Survey data using the R package bbsBayes. *7th North American Ornithological Conference* (Symposium: Back to the future of the breeding bird survey), Virtual Conference. 
 
 **Edwards BPM**, Smith AC, Hudson M-AR, Francis CM, Pardieck KL, Ziolkowski Jr DJ. (August 2019). bbsBayes: An R Package for Hierarchical Bayesian Modelling of Breeding Bird Survey Data. *Society of Canadian Ornithologists Annual Meeting* (Symposium: R for Ornithologists: Perspectives from UseRs to programmeRs), Quebec City, QC. 
 
 ## Select Conference Presentations
+**Edwards BPM**, Smith AC, et al. (2022). NA-POPS: A collaborative effort to synthesize detection probabilities for North American landbirds. *Ecological Society of America/Canadian Society for Ecology and Evolution 2022 Joint Conference*, Montreal, Canada.
+
+**Edwards BPM**, Solymos P, Stralberg D, Michel N, Robinson B, Gahbauer M, Grinde A, Hope D, Bennett J, Smith AC. (2022). A Bayesian hierarchical implementation of the QPAD framework for estimating detectability of landbirds. *International Statistical Ecology Conference 2022*, Cape Town, South Africa.
+
 **Edwards BPM**, Smith AC, NA-POPS Team. (August 2021). Point count offsets for population sizes of North American landbirds. *American Ornithology 2021*, Virtual. (Paper)
 
 **Edwards BPM**, Jacobs S, Gillis D. (June 2019). Risk Assessment of Great Lakes piping plovers using eABM: An R package to run Environment Agent-based Models. *American Ornithology 2019*, Anchorage, AK. (Paper)

@@ -13,17 +13,25 @@
 
 <title>Software</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <div><img src="img/gcsp.jpg" width="100%" align="center"></div>
@@ -38,11 +46,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -55,32 +58,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -90,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -110,40 +84,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -171,7 +118,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -183,7 +130,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -194,10 +141,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -209,7 +169,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -306,6 +265,13 @@ $(document).ready(function () {
     Publications
   </a>
 </li>
+<li>
+  <a href="cv_brandon_edwards.pdf">
+    <span class="fa fa-file"></span>
+     
+    CV
+  </a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -325,7 +291,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -334,14 +300,23 @@ $(document).ready(function () {
 </div>
 
 
-<p>Much of my software development and run-of-the-mill coding these days is done in <strong>R</strong>, with assists from probabilistic languages such as <strong>JAGS</strong>. I do have previous experience with developing in <strong>C</strong>, <strong>Python</strong>, and <strong>Julia</strong>, and I am constantly working to keep up-to-date on evolving technologies, especially as it pertains to adding efficiency to computationally heavy processes.</p>
+<p>Much of my software development and run-of-the-mill coding these days is done in <strong>R</strong>, with assists from probabilistic languages such as <strong>Stan</strong> and <strong>JAGS</strong>. I do have previous experience with developing in <strong>C</strong>, <strong>Python</strong>, and <strong>Julia</strong>, and I am constantly working to keep up-to-date on evolving technologies, especially as it pertains to adding efficiency to computationally heavy processes.</p>
 <p>Below are select pieces of software that I have developed for research purposes. Where possible, I’ve included links to research papers that have used the software.</p>
+<div id="napops" class="section level2">
+<h2>napops</h2>
+<p><a href="https://github.com/na-pops/napops">https://github.com/na-pops/napops</a></p>
+<p><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle" /></a></p>
+<p>This package provides an R interface for users to download results from the NA-POPS database housed on Github. Users can access estimates of effective detection radius, cue rate, and detection probability for more than 300 species of North American landbirds.</p>
+</div>
 <div id="bbsbayes" class="section level2">
 <h2>bbsBayes</h2>
 <p><a href="https://github.com/BrandonEdwards/bbsBayes">https://github.com/BrandonEdwards/bbsBayes</a></p>
 <p><a href="https://cran.r-project.org/package=bbsBayes"><img src="http://www.r-pkg.org/badges/version/bbsBayes" alt="CRAN_Status_Badge" /></a> <a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle" /></a></p>
-<p><strong>Research using this software:</strong></p>
+<p><strong>Example research using this software:</strong></p>
 <ul>
+<li><a href="https://doi.org/10.1139/cjz-2021-0207">Imlay et al. 2022</a></li>
+<li><a href="https://doi.org/10.1038/s41598-021-97889-x">English et al. 2021</a></li>
+<li><a href="https://doi.org/10.1111/cobi.13662">Allen and Lockwood 2021</a></li>
 <li><a href="https://doi.org/10.1093/ornithapp/duaa065">Smith and Edwards 2021</a></li>
 <li><a href="https://doi.org/10.1101/2020.05.27.118901">Edwards and Smith 2021</a></li>
 </ul>
@@ -390,7 +365,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

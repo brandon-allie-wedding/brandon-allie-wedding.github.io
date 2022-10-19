@@ -13,17 +13,25 @@
 
 <title>Publications</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <div><img src="img/rwbl.jpg" width="100%" align="center"></div>
@@ -38,11 +46,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -55,32 +58,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -90,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -110,40 +84,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -171,7 +118,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -183,7 +130,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -194,10 +141,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -209,7 +169,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -306,6 +265,13 @@ $(document).ready(function () {
     Publications
   </a>
 </li>
+<li>
+  <a href="cv_brandon_edwards.pdf">
+    <span class="fa fa-file"></span>
+     
+    CV
+  </a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -325,7 +291,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -334,12 +300,17 @@ $(document).ready(function () {
 </div>
 
 
+<p><a href="https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&amp;hl=en">Google Scholar Profile</a></p>
+<p>Crystal-Ornelas R, <strong>Edwards BPM</strong>, Hébert K, Hudgins EJ, Sánchez-Reyes LL, Scott ER, Grainger M, …, Braga PHP. Not Just for Programmers: How Github Can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. <em>Preprint</em>: <a href="https://doi.org/10.31222/osf.io/x3p2q" class="uri">https://doi.org/10.31222/osf.io/x3p2q</a></p>
+<p>Soroye P, <strong>Edwards BPM</strong>, Buxton RT, Ethier JP, Frempong-Manso A, Keefe H, Berberi A, Roach-Krajewski M, Binley AD, Vincent JG, Cooke SJ, Bennett JR. (2022). The perils and promise of community science for threatened species monitoring. <em>Conservation Science and Practice</em>, e12788. <a href="https://doi.org/10.1111/csp2.12788" class="uri">https://doi.org/10.1111/csp2.12788</a></p>
+<p><strong>Edwards BPM</strong>, Binley AD, English WB, Hudgins EJ, Snow SS. (2022). A highly anomalous Red-winged Blackbird (Agelaius phoeniceus) song. <em>Canadian Field-Naturalist</em> 136(1):1-4. <a href="https://doi.org/10.22621/cfn.v136i1.2877" class="uri">https://doi.org/10.22621/cfn.v136i1.2877</a></p>
+<p><strong>Edwards BPM</strong>, Watson AP, Earley CG. (2022). The University of Guelph’s Arboretum Winter Bird Count, 1980 –2022. <em>Ontario Birds</em> 40(1):43-56.</p>
+<p><strong>Edwards BPM</strong>, Bouman M. (2022). A possible Canvasback X Ruddy Duck hybrid. <em>Ontario Birds</em> 40(1):23-27.</p>
 <p><strong>Edwards BPM</strong>, Smith AC. (2021). bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. <em>Journal of Open Research Software</em> 9(1). <a href="http://doi.org/10.5334/jors.329" class="uri">http://doi.org/10.5334/jors.329</a></p>
 <p>Cooke SJ, Soroye P, Brooks JL, Clarke J, Jeanson AL, Berberi A, Piczak ML, Reid CH, Desforges JE, Guay JD, Drake AK, Jardine AM, Ethier JP, Keefe HE, Medd AM, <strong>Edwards BPM</strong>, et al. (2021). Ten considerations for conservation policy makers for the post-COVID-19 transition. <em>Environmental Reviews</em> 29(999). <a href="https://doi.org/10.1139/er-2021-0014" class="uri">https://doi.org/10.1139/er-2021-0014</a></p>
 <p>Smith AC, <strong>Edwards BPM</strong>. (2021). North American Breeding Bird Survey status and trend estimates to inform a wide-range of conservation needs, using a flexible Bayesian hierarchical generalized additive model. <em>Ornithological Applications</em> 123(1). <a href="https://doi.org/10.1093/ornithapp/duaa065" class="uri">https://doi.org/10.1093/ornithapp/duaa065</a></p>
 <p>Gillis D, <strong>Edwards BPM</strong>. (2019). The utility of joinpoint regression for estimating population parameters given changes in population structure. <em>Heliyon</em> 5(11), e02515. <a href="https://doi.org/10.1016/j.heliyon.2019.e02515" class="uri">https://doi.org/10.1016/j.heliyon.2019.e02515</a></p>
 <p>Rose D, <strong>Edwards BPM</strong>, Kett R, Yodzis M, Angevaare J, Gillis D. (2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. <em>2017 IEEE Canada International Humanitarian Technology Conference (IHTC)</em>, 85-89. <a href="https://doi.org/10.1109/IHTC.2017.8058206" class="uri">https://doi.org/10.1109/IHTC.2017.8058206</a></p>
-<p><a href="https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&amp;hl=en">Google Scholar Profile</a></p>
 <div id="invited-symposia" class="section level2">
 <h2>Invited Symposia</h2>
 <p><strong>Edwards BPM</strong>, Smith AC. (August 2020). Open, accessible, and customizable analysis of North American Breeding Bird Survey data using the R package bbsBayes. <em>7th North American Ornithological Conference</em> (Symposium: Back to the future of the breeding bird survey), Virtual Conference.</p>
@@ -347,6 +318,8 @@ $(document).ready(function () {
 </div>
 <div id="select-conference-presentations" class="section level2">
 <h2>Select Conference Presentations</h2>
+<p><strong>Edwards BPM</strong>, Smith AC, et al. (2022). NA-POPS: A collaborative effort to synthesize detection probabilities for North American landbirds. <em>Ecological Society of America/Canadian Society for Ecology and Evolution 2022 Joint Conference</em>, Montreal, Canada.</p>
+<p><strong>Edwards BPM</strong>, Solymos P, Stralberg D, Michel N, Robinson B, Gahbauer M, Grinde A, Hope D, Bennett J, Smith AC. (2022). A Bayesian hierarchical implementation of the QPAD framework for estimating detectability of landbirds. <em>International Statistical Ecology Conference 2022</em>, Cape Town, South Africa.</p>
 <p><strong>Edwards BPM</strong>, Smith AC, NA-POPS Team. (August 2021). Point count offsets for population sizes of North American landbirds. <em>American Ornithology 2021</em>, Virtual. (Paper)</p>
 <p><strong>Edwards BPM</strong>, Jacobs S, Gillis D. (June 2019). Risk Assessment of Great Lakes piping plovers using eABM: An R package to run Environment Agent-based Models. <em>American Ornithology 2019</em>, Anchorage, AK. (Paper)</p>
 <p><strong>Edwards BPM</strong>, Jacobs S, Gillis D. (August 2018). Assessing the effects of beach raking on piping plover reproductive success using an environmental agent-based model. <em>42nd Annual Waterbirds Society Meeting</em>, Vancouver, BC. (Paper)</p>
@@ -382,7 +355,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
