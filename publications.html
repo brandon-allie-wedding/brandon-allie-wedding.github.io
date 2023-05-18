@@ -11,9 +11,9 @@
 
 
 
-<title>Publications</title>
+<title>Writing</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 <div><img src="img/rwbl.jpg" width="100%" align="center"></div>
 
 <style type="text/css">
@@ -63,6 +63,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -140,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -173,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -182,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -235,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -295,37 +296,156 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Publications</h1>
+<h1 class="title toc-ignore">Writing</h1>
 
 </div>
 
 
-<p><a href="https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&amp;hl=en">Google Scholar Profile</a></p>
-<p>Crystal-Ornelas R, <strong>Edwards BPM</strong>, Hébert K, Hudgins EJ, Sánchez-Reyes LL, Scott ER, Grainger M, …, Braga PHP. Not Just for Programmers: How Github Can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. <em>Preprint</em>: <a href="https://doi.org/10.31222/osf.io/x3p2q" class="uri">https://doi.org/10.31222/osf.io/x3p2q</a></p>
-<p>Soroye P, <strong>Edwards BPM</strong>, Buxton RT, Ethier JP, Frempong-Manso A, Keefe H, Berberi A, Roach-Krajewski M, Binley AD, Vincent JG, Cooke SJ, Bennett JR. (2022). The perils and promise of community science for threatened species monitoring. <em>Conservation Science and Practice</em>, e12788. <a href="https://doi.org/10.1111/csp2.12788" class="uri">https://doi.org/10.1111/csp2.12788</a></p>
-<p><strong>Edwards BPM</strong>, Binley AD, English WB, Hudgins EJ, Snow SS. (2022). A highly anomalous Red-winged Blackbird (Agelaius phoeniceus) song. <em>Canadian Field-Naturalist</em> 136(1):1-4. <a href="https://doi.org/10.22621/cfn.v136i1.2877" class="uri">https://doi.org/10.22621/cfn.v136i1.2877</a></p>
-<p><strong>Edwards BPM</strong>, Watson AP, Earley CG. (2022). The University of Guelph’s Arboretum Winter Bird Count, 1980 –2022. <em>Ontario Birds</em> 40(1):43-56.</p>
-<p><strong>Edwards BPM</strong>, Bouman M. (2022). A possible Canvasback X Ruddy Duck hybrid. <em>Ontario Birds</em> 40(1):23-27.</p>
-<p><strong>Edwards BPM</strong>, Smith AC. (2021). bbsBayes: An R Package for Hierarchical Bayesian Analysis of North American Breeding Bird Survey Data. <em>Journal of Open Research Software</em> 9(1). <a href="http://doi.org/10.5334/jors.329" class="uri">http://doi.org/10.5334/jors.329</a></p>
-<p>Cooke SJ, Soroye P, Brooks JL, Clarke J, Jeanson AL, Berberi A, Piczak ML, Reid CH, Desforges JE, Guay JD, Drake AK, Jardine AM, Ethier JP, Keefe HE, Medd AM, <strong>Edwards BPM</strong>, et al. (2021). Ten considerations for conservation policy makers for the post-COVID-19 transition. <em>Environmental Reviews</em> 29(999). <a href="https://doi.org/10.1139/er-2021-0014" class="uri">https://doi.org/10.1139/er-2021-0014</a></p>
-<p>Smith AC, <strong>Edwards BPM</strong>. (2021). North American Breeding Bird Survey status and trend estimates to inform a wide-range of conservation needs, using a flexible Bayesian hierarchical generalized additive model. <em>Ornithological Applications</em> 123(1). <a href="https://doi.org/10.1093/ornithapp/duaa065" class="uri">https://doi.org/10.1093/ornithapp/duaa065</a></p>
-<p>Gillis D, <strong>Edwards BPM</strong>. (2019). The utility of joinpoint regression for estimating population parameters given changes in population structure. <em>Heliyon</em> 5(11), e02515. <a href="https://doi.org/10.1016/j.heliyon.2019.e02515" class="uri">https://doi.org/10.1016/j.heliyon.2019.e02515</a></p>
-<p>Rose D, <strong>Edwards BPM</strong>, Kett R, Yodzis M, Angevaare J, Gillis D. (2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. <em>2017 IEEE Canada International Humanitarian Technology Conference (IHTC)</em>, 85-89. <a href="https://doi.org/10.1109/IHTC.2017.8058206" class="uri">https://doi.org/10.1109/IHTC.2017.8058206</a></p>
-<div id="invited-symposia" class="section level2">
-<h2>Invited Symposia</h2>
-<p><strong>Edwards BPM</strong>, Smith AC. (August 2020). Open, accessible, and customizable analysis of North American Breeding Bird Survey data using the R package bbsBayes. <em>7th North American Ornithological Conference</em> (Symposium: Back to the future of the breeding bird survey), Virtual Conference.</p>
-<p><strong>Edwards BPM</strong>, Smith AC, Hudson M-AR, Francis CM, Pardieck KL, Ziolkowski Jr DJ. (August 2019). bbsBayes: An R Package for Hierarchical Bayesian Modelling of Breeding Bird Survey Data. <em>Society of Canadian Ornithologists Annual Meeting</em> (Symposium: R for Ornithologists: Perspectives from UseRs to programmeRs), Quebec City, QC.</p>
+<p>The majority of my writing is in the form of co-authored journal
+articles. I’ve made them available to download below.</p>
+<p>I find the usual numbering-in-reverse-chronological-ordering of
+journal articles to be rather boring and uninspiring, and so I’ve tried
+to group my writing pieces into themes as you will find below. You are
+of course welcome to view my <a
+href="https://scholar.google.ca/citations?user=rFIqtwgAAAAJ&amp;hl=en">Google
+Scholar Profile</a> or my <a href="cv_brandon_edwards.pdf">CV</a> and
+have them ordered by year, if you prefer.</p>
+<div id="the-north-american-breeding-bird-survey"
+class="section level3">
+<h3>The North American Breeding Bird Survey</h3>
+<p><a
+href="publications/edwards-smith-2021-bbsBayes.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+<strong>Edwards BPM</strong>, Smith AC. (2021). bbsBayes: An R Package
+for Hierarchical Bayesian Analysis of North American Breeding Bird
+Survey Data. <em>Journal of Open Research Software</em> 9(1). <a
+href="http://doi.org/10.5334/jors.329"
+class="uri">http://doi.org/10.5334/jors.329</a></p>
+<p><a
+href="publications/smith-edwards-2021-gam.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+Smith AC, <strong>Edwards BPM</strong>. (2021). North American Breeding
+Bird Survey status and trend estimates to inform a wide-range of
+conservation needs, using a flexible Bayesian hierarchical generalized
+additive model. <em>Ornithological Applications</em> 123(1). <a
+href="https://doi.org/10.1093/ornithapp/duaa065"
+class="uri">https://doi.org/10.1093/ornithapp/duaa065</a></p>
 </div>
-<div id="select-conference-presentations" class="section level2">
-<h2>Select Conference Presentations</h2>
-<p><strong>Edwards BPM</strong>, Smith AC, et al. (2022). NA-POPS: A collaborative effort to synthesize detection probabilities for North American landbirds. <em>Ecological Society of America/Canadian Society for Ecology and Evolution 2022 Joint Conference</em>, Montreal, Canada.</p>
-<p><strong>Edwards BPM</strong>, Solymos P, Stralberg D, Michel N, Robinson B, Gahbauer M, Grinde A, Hope D, Bennett J, Smith AC. (2022). A Bayesian hierarchical implementation of the QPAD framework for estimating detectability of landbirds. <em>International Statistical Ecology Conference 2022</em>, Cape Town, South Africa.</p>
-<p><strong>Edwards BPM</strong>, Smith AC, NA-POPS Team. (August 2021). Point count offsets for population sizes of North American landbirds. <em>American Ornithology 2021</em>, Virtual. (Paper)</p>
-<p><strong>Edwards BPM</strong>, Jacobs S, Gillis D. (June 2019). Risk Assessment of Great Lakes piping plovers using eABM: An R package to run Environment Agent-based Models. <em>American Ornithology 2019</em>, Anchorage, AK. (Paper)</p>
-<p><strong>Edwards BPM</strong>, Jacobs S, Gillis D. (August 2018). Assessing the effects of beach raking on piping plover reproductive success using an environmental agent-based model. <em>42nd Annual Waterbirds Society Meeting</em>, Vancouver, BC. (Paper)</p>
-<p><strong>Edwards BPM</strong>, Smith AC. (August 2018). Improved population trajectories for North American swallows, swifts, and nightjars with a hierarchical Bayesian GAM. <em>International Ornithological Congress 2018</em>, Vancouver, BC. (Poster)</p>
-<p><strong>Edwards BPM</strong>, Gillis D. (August 2017). Modelling habitat loss in Piping Plovers using an environmental agent-based model. <em>American Ornithology 2017</em>, Lansing, MI. (Poster)</p>
-<p>Rose D, <strong>Edwards BPM</strong>, Kett R, Yodzis M, Angevaare J, Gillis D. (July 2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. <em>IEEE International Humanitarian Technology Conference</em>, Guelph, ON. (Paper)</p>
+<div id="ecological-modelling" class="section level3">
+<h3>Ecological Modelling</h3>
+<p><a
+href="publications/gillis-edwards-2019-joinpoint.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+Gillis D, <strong>Edwards BPM</strong>. (2019). The utility of joinpoint
+regression for estimating population parameters given changes in
+population structure. <em>Heliyon</em> 5(11), e02515. <a
+href="https://doi.org/10.1016/j.heliyon.2019.e02515"
+class="uri">https://doi.org/10.1016/j.heliyon.2019.e02515</a></p>
+<p><a
+href="publications/rose-etal-2017-eabm.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+Rose D, <strong>Edwards BPM</strong>, Kett R, Yodzis M, Angevaare J,
+Gillis D. (2017). Exploring Anthropogenic Activities and Management
+Decisions Using a Novel Environmental Agent Based Model. <em>2017 IEEE
+Canada International Humanitarian Technology Conference (IHTC)</em>,
+85-89. <a href="https://doi.org/10.1109/IHTC.2017.8058206"
+class="uri">https://doi.org/10.1109/IHTC.2017.8058206</a></p>
+</div>
+<div id="detectability" class="section level3">
+<h3>Detectability</h3>
+<p><a
+href="publications/edwards-etal-2023-napops.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+<strong>Edwards BPM</strong>, Smith AC, Docherty TGS, Gahbauer MA,
+Gillespie CR, Grinde AR, Harmer T, Iles DT, Matsuoka SM, Michel NL,
+Murray A, Niemi GJ, Pasher J, Pavlacky Jr DC, Robinson BG, Ryder TB,
+Sólymos P, Stralberg D, Zlonis EJ. (2023). Point Count Offsets for
+Estimating Population Sizes of North American Landbirds. <em>Ibis</em>
+165(2):482-503. <a href="https://doi.org/10.1111/ibi.13169"
+class="uri">https://doi.org/10.1111/ibi.13169</a></p>
+</div>
+<div id="open-science" class="section level3">
+<h3>Open Science</h3>
+<p><a
+href="publications/braga-etal-2023-github.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+Braga PHP, Hébert K, Hudgins EJ, Scott ER, <strong>Edwards BPM</strong>,
+Sánchez-Reyes LL, Grainger MJ, Foroughirad V, Hilleman F, Binley AD,
+Brookson CB, Gaynor KM, Sabet SS, Güncan A, Weierbach H, Gomes DGE,
+Crystal-Ornelas R. (2023). Not Just for Programmers: How Github Can
+Accelerate Collaborative and Reproducible Research in Ecology and
+Evolution. <em>Methods in Ecology and Evolution</em>. <a
+href="https://doi.org/10.1111/2041-210X.14108"
+class="uri">https://doi.org/10.1111/2041-210X.14108</a></p>
+<p><a
+href="publications/binley-etal-2023-data.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+Binley AD, <strong>Edwards BPM</strong>, Dansereau G, Knight EC,
+Momeni-Dehaghi I. (2023). Minimizing Data Waste: Conservation in the Big
+Data Era. <em>Bulletin of the Ecological Society of America</em>
+104(2):e02056. <a href="https://doi.org/10.1002/bes2.2056"
+class="uri">https://doi.org/10.1002/bes2.2056</a></p>
+</div>
+<div id="citizen-sciencecommunity-science" class="section level3">
+<h3>Citizen Science/Community Science</h3>
+<p><a
+href="publications/soroye-etal-2022-citsci.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+Soroye P, <strong>Edwards BPM</strong>, Buxton RT, Ethier JP,
+Frempong-Manso A, Keefe H, Berberi A, Roach-Krajewski M, Binley AD,
+Vincent JG, Cooke SJ, Bennett JR. (2022). The perils and promise of
+community science for threatened species monitoring. <em>Conservation
+Science and Practice</em>, e12788. <a
+href="https://doi.org/10.1111/csp2.12788"
+class="uri">https://doi.org/10.1111/csp2.12788</a></p>
+</div>
+<div id="natural-history-notes" class="section level3">
+<h3>Natural History Notes</h3>
+<p><a
+href="publications/edwards-etal-2022-rwbl.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+<strong>Edwards BPM</strong>, Binley AD, English WB, Hudgins EJ, Snow
+SS. (2022). A highly anomalous Red-winged Blackbird (Agelaius
+phoeniceus) song. <em>Canadian Field-Naturalist</em> 136(1):1-4. <a
+href="https://doi.org/10.22621/cfn.v136i1.2877"
+class="uri">https://doi.org/10.22621/cfn.v136i1.2877</a></p>
+<p><a
+href="publications/edwards-bouman-2022-hybrid.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+<strong>Edwards BPM</strong>, Bouman M. (2022). A possible Canvasback X
+Ruddy Duck hybrid. <em>Ontario Birds</em> 40(1):23-27.</p>
+<p><a
+href="publications/edwards-etal-2022-arboretum.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+<strong>Edwards BPM</strong>, Watson AP, Earley CG. (2022). The
+University of Guelph’s Arboretum Winter Bird Count, 1980 –2022.
+<em>Ontario Birds</em> 40(1):43-56.</p>
+</div>
+<div id="others-that-i-just-cant-seem-to-categorize-yet"
+class="section level3">
+<h3>Others that I just can’t seem to categorize (yet)</h3>
+<p><a
+href="publications/cooke-etal-2021-covid.pdf"><svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg">
+<path d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z"></path></svg></a>
+Cooke SJ, Soroye P, Brooks JL, Clarke J, Jeanson AL, Berberi A, Piczak
+ML, Reid CH, Desforges JE, Guay JD, Drake AK, Jardine AM, Ethier JP,
+Keefe HE, Medd AM, <strong>Edwards BPM</strong>, et al. (2021). Ten
+considerations for conservation policy makers for the post-COVID-19
+transition. <em>Environmental Reviews</em> 29(999). <a
+href="https://doi.org/10.1139/er-2021-0014"
+class="uri">https://doi.org/10.1139/er-2021-0014</a></p>
+<!-- ## Invited Symposia -->
+<!-- **Edwards BPM**, Smith AC. (August 2020). Open, accessible, and customizable analysis of North American Breeding Bird Survey data using the R package bbsBayes. *7th North American Ornithological Conference* (Symposium: Back to the future of the breeding bird survey), Virtual Conference.  -->
+<!-- **Edwards BPM**, Smith AC, Hudson M-AR, Francis CM, Pardieck KL, Ziolkowski Jr DJ. (August 2019). bbsBayes: An R Package for Hierarchical Bayesian Modelling of Breeding Bird Survey Data. *Society of Canadian Ornithologists Annual Meeting* (Symposium: R for Ornithologists: Perspectives from UseRs to programmeRs), Quebec City, QC.  -->
+<!-- ## Select Conference Presentations -->
+<!-- **Edwards BPM**, Smith AC, et al. (2022). NA-POPS: A collaborative effort to synthesize detection probabilities for North American landbirds. *Ecological Society of America/Canadian Society for Ecology and Evolution 2022 Joint Conference*, Montreal, Canada. -->
+<!-- **Edwards BPM**, Solymos P, Stralberg D, Michel N, Robinson B, Gahbauer M, Grinde A, Hope D, Bennett J, Smith AC. (2022). A Bayesian hierarchical implementation of the QPAD framework for estimating detectability of landbirds. *International Statistical Ecology Conference 2022*, Cape Town, South Africa. -->
+<!-- **Edwards BPM**, Smith AC, NA-POPS Team. (August 2021). Point count offsets for population sizes of North American landbirds. *American Ornithology 2021*, Virtual. (Paper) -->
+<!-- **Edwards BPM**, Jacobs S, Gillis D. (June 2019). Risk Assessment of Great Lakes piping plovers using eABM: An R package to run Environment Agent-based Models. *American Ornithology 2019*, Anchorage, AK. (Paper) -->
+<!-- **Edwards BPM**, Jacobs S, Gillis D. (August 2018). Assessing the effects of beach raking on piping plover reproductive success using an environmental agent-based model. *42nd Annual Waterbirds Society Meeting*, Vancouver, BC. (Paper) -->
+<!-- **Edwards BPM**, Smith AC. (August 2018). Improved population trajectories for North American swallows, swifts, and nightjars with a hierarchical Bayesian GAM. *International Ornithological Congress 2018*, Vancouver, BC. (Poster) -->
+<!-- **Edwards BPM**, Gillis D. (August 2017). Modelling habitat loss in Piping Plovers using an environmental agent-based model. *American Ornithology 2017*, Lansing, MI. (Poster) -->
+<!-- Rose D, **Edwards BPM**, Kett R, Yodzis M, Angevaare J, Gillis D. (July 2017). Exploring Anthropogenic Activities and Management Decisions Using a Novel Environmental Agent Based Model. *IEEE International Humanitarian Technology Conference*, Guelph, ON. (Paper) -->
 </div>
 
 

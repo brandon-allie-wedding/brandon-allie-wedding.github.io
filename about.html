@@ -13,7 +13,7 @@
 
 <title>About</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 <div><img src="img/about.jpg" width="100%" align="center"></div>
 
 <style type="text/css">
@@ -63,6 +63,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -140,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -173,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -182,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -235,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -300,21 +301,63 @@ $(document).ready(function () {
 </div>
 
 
-<div id="applied-statistician" class="section level2">
-<h2>Applied Statistician</h2>
-<p>I am currently an PhD Candidate at Carleton University, co-supervised by Drs <a href="https://carleton.ca/biology/people/adam-smith/">Adam Smith</a> and <a href="https://carleton.ca/biology/people/joseph-bennett/">Joe Bennett</a>. My research focuses on improving estimates of bird population sizes via detectability offsets. I am currently lead analyst on the <a href="http://na-pops.org/">NA-POPS project</a>, which is seeking to develop an open-access database of detectability functions to account for biases in bird detectability during on- and off-road point count bird surveys. I use R and Stan to develop multi-species Bayesian hierarchical removal and distance models to generate estimates of a bird species’ availability and detectability, given a number of seasonal and spatial covariates.</p>
-<p>In 2020, I completed my <strong>BSc in Mathematical Science</strong> in the <em>Statistics</em> stream, with an emphasis in Computer Science at the <a href="https://www.uoguelph.ca/">University of Guelph</a>. My honours thesis, supervised by <a href="https://danielgillis.wordpress.com/">Dr Daniel Gillis</a>, compared typologies of the Deviance Information Criterion (DIC) within the context of generalized spatial Poisson mixture models.</p>
-<p>Throughout my undergraduate career, I worked as an Undergraduate Research Assistant under the supervision of Dr Gillis and <a href="https://www.uoguelph.ca/ib/jacobs">Dr. Shoshanah Jacobs</a>. I developed the Great Lakes Piping Plover Biological Modeling Program, which seeks to create <a href="https://github.com/BrandonEdwards/melodus">tools</a> to assist in management and recovery of Great Lakes piping plovers (<em>Charadrius melodus circumcinctus</em>). You can read more about an 8-month co-op term <a href="wt1.html">here</a>.</p>
-<p>I also completed a <a href="wt3.html">4-month co-op term</a> working as a Bird Population Monitoring Analyst at Environment and Climate Change Canada in Summer 2018. In that position, I tested the use of generalized additive mixed-models for improving status and trend estimates of North American breeding birds, and developed the R package <a href="software.html#bbsBayes">bbsBayes</a>.</p>
+<div id="statistical-ecologist" class="section level2">
+<h2>Statistical Ecologist</h2>
+<p>I am currently an PhD Candidate at Carleton University, co-supervised
+by Drs <a href="https://carleton.ca/biology/people/adam-smith/">Adam
+Smith</a> and <a
+href="https://carleton.ca/biology/people/joseph-bennett/">Joe
+Bennett</a>. My research focuses on broad-scale estimates and drivers of
+detectability in North American landbirds. I am the lead analyst on the
+<a href="http://na-pops.org/">NA-POPS project</a>, which is seeking to
+develop an open-access database of detectability functions to account
+for biases in bird detectability during on- and off-road point count
+bird surveys. I use R and Stan to develop multi-species Bayesian
+hierarchical removal and distance models to generate estimates of a bird
+species’ availability and detectability, given a number of seasonal and
+spatial covariates.</p>
+<p>In 2020, I completed my <strong>BSc in Mathematical Science</strong>
+in the <em>Statistics</em> stream, with an emphasis in Computer Science
+at the <a href="https://www.uoguelph.ca/">University of Guelph</a>. My
+honours thesis, supervised by <a
+href="https://danielgillis.wordpress.com/">Dr Daniel Gillis</a>,
+compared typologies of the Deviance Information Criterion (DIC) within
+the context of generalized spatial Poisson mixture models.</p>
+<p>Throughout my undergraduate career, I worked as an Undergraduate
+Research Assistant under the supervision of Dr Gillis and <a
+href="https://www.uoguelph.ca/ib/jacobs">Dr. Shoshanah Jacobs</a>. I
+developed the Great Lakes Piping Plover Biological Modeling Program,
+which seeks to create <a
+href="https://github.com/BrandonEdwards/melodus">tools</a> to assist in
+management and recovery of Great Lakes piping plovers (<em>Charadrius
+melodus circumcinctus</em>). You can read more about an 8-month co-op
+term <a href="wt1.html">here</a>.</p>
+<p>I also completed a <a href="wt3.html">4-month co-op term</a> working
+as a Bird Population Monitoring Analyst at Environment and Climate
+Change Canada in Summer 2018. In that position, I tested the use of
+generalized additive mixed-models for improving status and trend
+estimates of North American breeding birds, and developed the R package
+<a href="software.html#bbsBayes">bbsBayes</a>.</p>
 </div>
 <div id="amateur-naturalist-nature-photographer" class="section level2">
 <h2>Amateur Naturalist &amp; Nature Photographer</h2>
-<p>When I’m not in front of a computer screen writing code, I am exploring the world around me. My main passion lies in ornithology, and my free time is often spent birding. I contribute as much of my birding as I can to citizen science; you can find my eBird profile <a href="https://ebird.org/profile/NjA1NTU0/CA-ON">here</a> (you may need an eBird account)! Birding with people of many other interests has allowed me to expand my own interests into the world of herps, moths, odes, and wildflowers.</p>
-<p>While statistics and computer science will be at the forefront of my academic research, I hope to also be able to contribute to natural history research through my amateur field observations.</p>
+<p>When I’m not in front of a computer screen writing code, I am
+exploring the world around me. My main passion lies in ornithology, and
+my free time is often spent birding. I contribute as much of my birding
+as I can to citizen science; you can find my eBird profile <a
+href="https://ebird.org/profile/NjA1NTU0/CA-ON">here</a> (you may need
+an eBird account)! Birding with people of many other interests has
+allowed me to expand my own interests into the world of herps, moths,
+odes, and wildflowers.</p>
+<p>While statistics and computer science will be at the forefront of my
+academic research, I hope to also be able to contribute to natural
+history research through my amateur field observations.</p>
 </div>
 <div id="contact-me" class="section level2">
 <h2>Contact Me</h2>
-<p><strong>Email</strong>: <a href="mailto:brandonedwards3@cmail.carleton.ca" class="email">brandonedwards3@cmail.carleton.ca</a></p>
+<p><strong>Email</strong>: <a
+href="mailto:brandonedwards3@cmail.carleton.ca"
+class="email">brandonedwards3@cmail.carleton.ca</a></p>
 </div>
 
 

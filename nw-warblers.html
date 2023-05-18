@@ -13,7 +13,7 @@
 
 <title>New World Warblers</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +83,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -172,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -181,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -234,7 +235,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -299,58 +300,90 @@ $(document).ready(function () {
 </div>
 
 
-<p>This vibrant group of birds occur only in North and South America. Each spring they travel thousands of kilometres from South and Central America north to the boreal forests of Canada and Alaska. May is one of the most exciting times of the year if you live in eastern North America, as thousands of individuals spanning over 50 species stop over in various forests to fuel their journey.</p>
-<p>This group of birds is one of my favourite groups for multiple reasons. For one, their bright colours and seemingly positive energy fully push me into the excitement and happiness of the upcoming sunny days of spring and summer, especially after the cold, gloomy Canadian winters. However, I’m also drawn to their impressive and magical migration patterns. Most birds, including these warblers, migrate at night, relying on starlight and Earth’s magnetic field alone to direct them to where they need to go. Any warbler I see on a chilly May morning in southern Ontario could very well have been in the southern United States only one day ago. This impressive feat happens year after year, and the pure magic of experiencing a spring migration in the east never fades.</p>
+<p>This vibrant group of birds occur only in North and South America.
+Each spring they travel thousands of kilometres from South and Central
+America north to the boreal forests of Canada and Alaska. May is one of
+the most exciting times of the year if you live in eastern North
+America, as thousands of individuals spanning over 50 species stop over
+in various forests to fuel their journey.</p>
+<p>This group of birds is one of my favourite groups for multiple
+reasons. For one, their bright colours and seemingly positive energy
+fully push me into the excitement and happiness of the upcoming sunny
+days of spring and summer, especially after the cold, gloomy Canadian
+winters. However, I’m also drawn to their impressive and magical
+migration patterns. Most birds, including these warblers, migrate at
+night, relying on starlight and Earth’s magnetic field alone to direct
+them to where they need to go. Any warbler I see on a chilly May morning
+in southern Ontario could very well have been in the southern United
+States only one day ago. This impressive feat happens year after year,
+and the pure magic of experiencing a spring migration in the east never
+fades.</p>
 <div id="prairie-warbler-setophaga-discolor" class="section level3">
 <h3>Prairie Warbler (<em>Setophaga discolor</em>)</h3>
-<p>Pinery Provincial Park, Ontario, Canada. 4 July 2021. <img src="img/nw-warblers/praw.jpg" /></p>
+<p>Pinery Provincial Park, Ontario, Canada. 4 July 2021. <img
+src="img/nw-warblers/praw.jpg" /></p>
 </div>
-<div id="blue-winged-warbler-vermivora-cyanoptera" class="section level3">
+<div id="blue-winged-warbler-vermivora-cyanoptera"
+class="section level3">
 <h3>Blue-winged Warbler (<em>Vermivora cyanoptera</em>)</h3>
-<p>Hillman Marsh Conservation Area, Ontario, Canada. 8 May 2021. <img src="img/nw-warblers/bwwa.jpg" /></p>
+<p>Hillman Marsh Conservation Area, Ontario, Canada. 8 May 2021. <img
+src="img/nw-warblers/bwwa.jpg" /></p>
 </div>
 <div id="yellow-warbler-setophaga-petechia" class="section level3">
 <h3>Yellow Warbler (<em>Setophaga petechia</em>)</h3>
-<p>Point Pelee National Park, Ontario, Canada. 9 May 2021. <img src="img/nw-warblers/yewa.jpg" /></p>
+<p>Point Pelee National Park, Ontario, Canada. 9 May 2021. <img
+src="img/nw-warblers/yewa.jpg" /></p>
 </div>
 <div id="magnolia-warbler-setophaga-magnolia" class="section level3">
 <h3>Magnolia Warbler (<em>Setophaga magnolia</em>)</h3>
-Point Pelee National Park, Ontario, Canada. 9 May 2019. <img src="img/nw-warblers/mawa.jpg" />
+Point Pelee National Park, Ontario, Canada. 9 May 2019. <img
+src="img/nw-warblers/mawa.jpg" />
 <hr />
 </div>
-<div id="bay-breasted-warbler-setophaga-castanea" class="section level3">
+<div id="bay-breasted-warbler-setophaga-castanea"
+class="section level3">
 <h3>Bay-breasted Warbler (<em>Setophaga castanea</em>)</h3>
-Point Pelee National Park, Ontario, Canada. 9 May 2019. <img src="img/nw-warblers/bbwa.jpg" />
+Point Pelee National Park, Ontario, Canada. 9 May 2019. <img
+src="img/nw-warblers/bbwa.jpg" />
 <hr />
 </div>
-<div id="chestnut-sided-warbler-setophaga-pensylvanica" class="section level3">
+<div id="chestnut-sided-warbler-setophaga-pensylvanica"
+class="section level3">
 <h3>Chestnut-sided Warbler (<em>Setophaga pensylvanica</em>)</h3>
-Point Pelee National Park, Ontario, Canada. 9 May 2019. <img src="img/nw-warblers/cswa.jpg" />
+Point Pelee National Park, Ontario, Canada. 9 May 2019. <img
+src="img/nw-warblers/cswa.jpg" />
 <hr />
 </div>
 <div id="kentucky-warbler-geothlypis-formosa" class="section level3">
 <h3>Kentucky Warbler (<em>Geothlypis formosa</em>)</h3>
-Point Pelee National Park, Ontario, Canada. 9 May 2019. <img src="img/nw-warblers/kewa.jpg" />
+Point Pelee National Park, Ontario, Canada. 9 May 2019. <img
+src="img/nw-warblers/kewa.jpg" />
 <hr />
 </div>
 <div id="northern-parula-setophaga-americana" class="section level3">
 <h3>Northern Parula (<em>Setophaga americana</em>)</h3>
-Point Pelee National Park, Ontario, Canada. 8 May 2019. <img src="img/nw-warblers/nopa.jpg" />
+Point Pelee National Park, Ontario, Canada. 8 May 2019. <img
+src="img/nw-warblers/nopa.jpg" />
 <hr />
 </div>
 <div id="wilsons-warbler-cardellina-pusilla" class="section level3">
 <h3>Wilson’s Warbler (<em>Cardellina pusilla</em>)</h3>
-Hatcher Pass, Alaska, USA. 29 June 2019. <img src="img/nw-warblers/wiwa.jpg" />
+Hatcher Pass, Alaska, USA. 29 June 2019. <img
+src="img/nw-warblers/wiwa.jpg" />
 <hr />
 </div>
-<div id="yellow-rumped-warbler-setophaga-coronata" class="section level3">
+<div id="yellow-rumped-warbler-setophaga-coronata"
+class="section level3">
 <h3>Yellow-rumped Warbler (<em>Setophaga coronata</em>)</h3>
-Canatara Park, Sarnia, Ontario, Canada. 16 April 2017. <img src="img/nw-warblers/yrwa.jpg" />
+Canatara Park, Sarnia, Ontario, Canada. 16 April 2017. <img
+src="img/nw-warblers/yrwa.jpg" />
 <hr />
 </div>
-<div id="black-throated-green-warbler-setophaga-virens" class="section level3">
+<div id="black-throated-green-warbler-setophaga-virens"
+class="section level3">
 <h3>Black-throated Green Warbler (<em>Setophaga virens</em>)</h3>
-Forest, Ontario, Canada. 6 May 2020. <img src="img/nw-warblers/btnw.jpg" />
+Forest, Ontario, Canada. 6 May 2020. <img
+src="img/nw-warblers/btnw.jpg" />
 <hr />
 </div>
 

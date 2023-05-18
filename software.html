@@ -13,7 +13,7 @@
 
 <title>Software</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 <div><img src="img/gcsp.jpg" width="100%" align="center"></div>
 
 <style type="text/css">
@@ -63,6 +63,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -140,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -173,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -182,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -235,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -300,42 +301,99 @@ $(document).ready(function () {
 </div>
 
 
-<p>Much of my software development and run-of-the-mill coding these days is done in <strong>R</strong>, with assists from probabilistic languages such as <strong>Stan</strong> and <strong>JAGS</strong>. I do have previous experience with developing in <strong>C</strong>, <strong>Python</strong>, and <strong>Julia</strong>, and I am constantly working to keep up-to-date on evolving technologies, especially as it pertains to adding efficiency to computationally heavy processes.</p>
-<p>Below are select pieces of software that I have developed for research purposes. Where possible, I’ve included links to research papers that have used the software.</p>
+<p>Much of my software development and run-of-the-mill coding these days
+is done in <strong>R</strong>, with assists from probabilistic languages
+such as <strong>Stan</strong> and <strong>JAGS</strong>. I do have
+previous experience with developing in <strong>C</strong>,
+<strong>Python</strong>, and <strong>Julia</strong>, and I am constantly
+working to keep up-to-date on evolving technologies, especially as it
+pertains to adding efficiency to computationally heavy processes.</p>
+<p>Below are select pieces of software that I have developed for
+research purposes. Where possible, I’ve included links to research
+papers that have used the software.</p>
 <div id="napops" class="section level2">
 <h2>napops</h2>
-<p><a href="https://github.com/na-pops/napops">https://github.com/na-pops/napops</a></p>
-<p><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle" /></a></p>
-<p>This package provides an R interface for users to download results from the NA-POPS database housed on Github. Users can access estimates of effective detection radius, cue rate, and detection probability for more than 300 species of North American landbirds.</p>
+<p><a
+href="https://github.com/na-pops/napops">https://github.com/na-pops/napops</a></p>
+<p><a href="https://www.tidyverse.org/lifecycle/#maturing"><img
+src="https://img.shields.io/badge/lifecycle-maturing-blue.svg"
+alt="lifecycle" /></a></p>
+<p>This package provides an R interface for users to download results
+from the NA-POPS database housed on Github. Users can access estimates
+of effective detection radius, cue rate, and detection probability for
+more than 300 species of North American landbirds.</p>
+<p><strong>Example research using this software:</strong></p>
+<ul>
+<li><a href="https://doi.org/10.1111/ibi.13169">Edwards et
+al. 2023</a></li>
+</ul>
 </div>
 <div id="bbsbayes" class="section level2">
 <h2>bbsBayes</h2>
-<p><a href="https://github.com/BrandonEdwards/bbsBayes">https://github.com/BrandonEdwards/bbsBayes</a></p>
-<p><a href="https://cran.r-project.org/package=bbsBayes"><img src="http://www.r-pkg.org/badges/version/bbsBayes" alt="CRAN_Status_Badge" /></a> <a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle" /></a></p>
+<p><a
+href="https://github.com/BrandonEdwards/bbsBayes">https://github.com/BrandonEdwards/bbsBayes</a></p>
+<p><a href="https://cran.r-project.org/package=bbsBayes"><img
+src="http://www.r-pkg.org/badges/version/bbsBayes"
+alt="CRAN_Status_Badge" /></a> <a
+href="https://www.tidyverse.org/lifecycle/#maturing"><img
+src="https://img.shields.io/badge/lifecycle-maturing-blue.svg"
+alt="lifecycle" /></a></p>
+<p>Perform hierarchical Bayesian analysis of North American Breeding
+Bird Survey (BBS) data. ‘bbsBayes’ will run a full model analysis for
+one or more species that you choose, or you can take more control and
+specify how the data should be stratified, prepared for JAGS, or
+modelled.</p>
 <p><strong>Example research using this software:</strong></p>
 <ul>
-<li><a href="https://doi.org/10.1139/cjz-2021-0207">Imlay et al. 2022</a></li>
-<li><a href="https://doi.org/10.1038/s41598-021-97889-x">English et al. 2021</a></li>
-<li><a href="https://doi.org/10.1111/cobi.13662">Allen and Lockwood 2021</a></li>
-<li><a href="https://doi.org/10.1093/ornithapp/duaa065">Smith and Edwards 2021</a></li>
-<li><a href="https://doi.org/10.1101/2020.05.27.118901">Edwards and Smith 2021</a></li>
+<li><a href="https://doi.org/10.1016/j.scitotenv.2023.163413">Betini et
+al. 2023</a></li>
+<li><a href="https://doi.org/10.1139/cjz-2021-0207">Imlay et
+al. 2022</a></li>
+<li><a href="https://doi.org/10.1002/jwmg.22324">Kusack et
+al. 2022</a></li>
+<li><a href="https://doi.org/10.1093/ornithapp/duab035">Detling et
+al. 2021</a></li>
+<li><a href="https://doi.org/10.1038/s41598-021-97889-x">English et
+al. 2021</a></li>
+<li><a href="https://doi.org/10.1111/cobi.13662">Allen and Lockwood
+2021</a></li>
+<li><a href="https://doi.org/10.1093/ornithapp/duaa065">Smith and
+Edwards 2021</a></li>
+<li><a href="https://doi.org/10.1101/2020.05.27.118901">Edwards and
+Smith 2021</a></li>
 </ul>
-<p>Perform hierarchical Bayesian analysis of North American Breeding Bird Survey (BBS) data. ‘bbsBayes’ will run a full model analysis for one or more species that you choose, or you can take more control and specify how the data should be stratified, prepared for JAGS, or modelled.</p>
 </div>
 <div id="melodus" class="section level2">
 <h2>melodus</h2>
-<p><a href="https://github.com/BrandonEdwards/melodus">https://github.com/BrandonEdwards/melodus</a></p>
-<p><a href="https://zenodo.org/badge/latestdoi/90767223"><img src="https://zenodo.org/badge/90767223.svg" alt="DOI" /></a></p>
-<p>Python implementation of an environment agent-based model. Simulate nesting and migrating Piping Plovers (<em>Charadrius melodus</em>) in the Great Lakes region.</p>
+<p><a
+href="https://github.com/BrandonEdwards/melodus">https://github.com/BrandonEdwards/melodus</a></p>
+<p><a href="https://zenodo.org/badge/latestdoi/90767223"><img
+src="https://zenodo.org/badge/90767223.svg" alt="DOI" /></a></p>
+<p>Python implementation of an environment agent-based model. Simulate
+nesting and migrating Piping Plovers (<em>Charadrius melodus</em>) in
+the Great Lakes region.</p>
 </div>
 <div id="fishebm.jl" class="section level2">
 <h2>FishEBM.jl</h2>
-<p><a href="https://github.com/BrandonEdwards/FishEBM.jl">https://github.com/BrandonEdwards/FishEBM.jl</a></p>
+<p><a
+href="https://github.com/BrandonEdwards/FishEBM.jl">https://github.com/BrandonEdwards/FishEBM.jl</a></p>
 <p><strong>Research using this software:</strong></p>
 <ul>
-<li><a href="https://ieeexplore.ieee.org/abstract/document/8058206">Rose et al. 2017</a></li>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/8058206">Rose
+et al. 2017</a></li>
 </ul>
-<p>Julia package containing functions to simulate the life cycle dynamics of managed fisheries. A fish population is divided into two components: adults and pre-recruits. Adults have age-specific survivorship, are harvested with age specific catchability, and spawn with age specific sexual maturity and fecundity. Agents graduate between several life stages, move, and face multiple forms of stage and location specific mortality. The model is a detailed and computationally intensive agent based model that does not track each individual agent, instead the environment is monitored while agents move throughout the chosen environment. This simulation tool is well suited for investigation of spatial risks in managed populations, where population level impacts may only be observable through changes in harvest.</p>
+<p>Julia package containing functions to simulate the life cycle
+dynamics of managed fisheries. A fish population is divided into two
+components: adults and pre-recruits. Adults have age-specific
+survivorship, are harvested with age specific catchability, and spawn
+with age specific sexual maturity and fecundity. Agents graduate between
+several life stages, move, and face multiple forms of stage and location
+specific mortality. The model is a detailed and computationally
+intensive agent based model that does not track each individual agent,
+instead the environment is monitored while agents move throughout the
+chosen environment. This simulation tool is well suited for
+investigation of spatial risks in managed populations, where population
+level impacts may only be observable through changes in harvest.</p>
 </div>
 
 
