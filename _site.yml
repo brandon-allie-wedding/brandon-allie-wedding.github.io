@@ -10,9 +10,9 @@ navbar:
     - text: "Software"
       icon: fa-code
       href: software.html
-    - text: "Publications"
+    - text: "Writing"
       icon: fa-pencil
-      href: publications.html
+      href: writing.html
     - text: "CV"
       icon: fa-file
       href: cv_brandon_edwards.pdf
