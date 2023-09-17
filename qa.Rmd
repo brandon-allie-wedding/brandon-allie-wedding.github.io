@@ -1,0 +1,8 @@
+---
+title: "Q&A"
+output:
+  html_document:
+    includes:
+      in_header: qa-cover.html
+---
+

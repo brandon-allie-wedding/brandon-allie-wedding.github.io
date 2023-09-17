@@ -1,29 +1,32 @@
-name: "Brandon Edwards"                                # CHANGE HERE 
+name: "Allie and Brandon's Wedding"                                # CHANGE HERE 
 output_dir: "."
 navbar:
-  title: "Brandon Edwards"                             # CHANGE HERE 
+  title: "Allie and Brandon"                             # CHANGE HERE 
   type: default
   left:
-    - text: "About"
-      icon: fa-user 
-      href: about.html
-    - text: "Software"
-      icon: fa-code
-      href: software.html
-    - text: "Writing"
-      icon: fa-pencil
-      href: writing.html
-    - text: "CV"
-      icon: fa-file
-      href: cv_brandon_edwards.pdf
-  right:
-    - icon: fa-github
-      href: https://github.com/BrandonEdwards      # CHANGE HERE 
-    - icon: fa-linkedin
-      href: https://www.linkedin.com/in/brandonpmedwards/
+    - text: "Home"
+     # icon: fa-user 
+      href: index.html
+    - text: "Venue Info"
+      #icon: fa-code
+      href: venue.html
+    - text: "Travel"
+     # icon: fa-pencil
+      href: travel.html
+    - text: "Agenda"
+      #icon: fa-file
+      href: agenda.html
+    - text: "Q&A"
+      #icon: fa-file
+      href: qa.html
+  # right:
+  #   - icon: fa-github
+  #     href: https://github.com/BrandonEdwards      # CHANGE HERE 
+  #   - icon: fa-linkedin
+  #     href: https://www.linkedin.com/in/brandonpmedwards/
 #    - icon: fa-twitter
  #     href: https://twitter.com/bedwards144
 output:
   html_document:
-    theme: cosmo
+    theme: lumen
     highlight: textmate

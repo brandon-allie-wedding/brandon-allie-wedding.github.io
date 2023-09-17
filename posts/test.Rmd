@@ -1,8 +1,0 @@
----
-title: "Test"
-output:
-  html_document:
-    includes:
-      in_header: ../posts-cover.html
----
-Hi this worked!

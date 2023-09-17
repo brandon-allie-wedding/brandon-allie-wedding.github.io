@@ -1,8 +1,14 @@
 ---
-title: "Brandon Edwards"
+title: ""
 output:
   html_document:
     includes:
       in_header: index-cover.html
 ---
-Hello! I'm Brandon Edwards. I'm a statistical ecologist, amateur naturalist, and bird photographer, currently pursuing a PhD at Carleton University. [More about me.](about.html)
+<center>
+###
+# Allie and Brandon's Wedding
+
+#### Our wedding is on **INSERT DATE HERE**, taking place at **INSERT VENUE HERE** near Nelson, British Columba.
+#### We'll keep this website updated with details, formal invitations to follow.
+</center>
