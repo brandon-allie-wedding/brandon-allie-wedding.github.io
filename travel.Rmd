@@ -5,3 +5,16 @@ output:
     includes:
       in_header: travel-cover.html
 ---
+
+<center>
+
+<h3>We are so excited to have so many of you coming from out of town. We have tried 
+to make things as easy as possible for you to figure out travel plans, what to do when you
+are here, etc.
+
+<h1> Getting Here
+
+<h3> You have a few airport options to choose from
+
+
+</center>
