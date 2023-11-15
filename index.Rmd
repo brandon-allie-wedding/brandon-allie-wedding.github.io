@@ -7,7 +7,7 @@ output:
 ---
 <center>
 ###
-# Allie and Brandon's Wedding
+# We're getting married!
 
 ### Our wedding is on **7 September 2024**, taking place at **Queen's Bay, British Columbia**, with reception to follow at **[The Hume Hotel](https://www.humehotel.com/) in Nelson, British Columbia**.
 #### We'll keep this website updated with details, formal invitations to follow.
