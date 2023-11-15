@@ -6,3 +6,28 @@ output:
       in_header: qa-cover.html
 ---
 
+<center>
+
+### **Are children welcome?**
+
+### Yes!
+
+
+
+### **Is this wedding indoor or outdoors?**
+
+### We are hoping for outdoor ceremony with an indoor reception, but will have weather plans in place!
+
+
+
+### **What should I wear?**
+
+### Dressy casual or cocktail. The ceremony location may have some uneven ground, so make sure you wear shoes that you are comfortable wearing on grass!
+
+
+
+### **What about a gift registry?**
+
+### Your presence is a good enough present! We realize the costs associated with getting and staying here to celebrate with us, and so we are not asking for gifts. If you would like to contribute to our honeymoon, we of course would be incredibly grateful. Details coming soon...
+
+</center>
