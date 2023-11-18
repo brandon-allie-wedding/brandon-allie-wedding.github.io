@@ -1,5 +1,5 @@
 ---
-title: "Venue Information"
+title: ""
 output:
   html_document:
     includes:
@@ -8,16 +8,16 @@ output:
 
 <center>
 
-## **The Ceremony**
+# **The Ceremony**
 
 ![](img/venue-ceremony.jpg)
 
 ### We will be getting married on a family property in Queen's Bay, British Columbia. Queen's Bay is nestled in the heart of the Kootenay Region of BC, and boasts lovely mountain views over Kootenay Lake. Allie's family has a cabin here and has been coming here for generations, and would love to share this beautiful part of the world with you.
 
-## **The Reception**
+# **The Reception**
 
 ![](img/hume.jpg)
 
-### After our ceremony, we will head back to the quaint town of Nelson, British Columbia, where we will gather for a reception at the historic [Hume Hotel & Spa](https://www.humehotel.com/).
+### After our ceremony, we will head back to the quaint town of Nelson, British Columbia, where we will gather for dinner and dancing (and possibly karaoke?) at the historic [Hume Hotel & Spa](https://www.humehotel.com/).
 
 </center>
