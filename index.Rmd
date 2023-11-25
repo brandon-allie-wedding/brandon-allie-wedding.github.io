@@ -13,5 +13,5 @@ output:
 
 ### We'll keep this website updated with details. Formal invitations to follow.
 
-### If you are using this website on a phone or tablet, you can access the menu with more information in the upper right "3 lined menu".
+#### If you are using this website on a phone or tablet, you can access the menu with more information in the upper right "3 lined menu".
 </center>
