@@ -10,5 +10,8 @@ output:
 <h1 style = "font-family: Rockwell Extra Bold"> We're getting married!</h1>
 
 ### Our wedding is on **7 September 2024**, taking place at **Queen's Bay, British Columbia**, with reception to follow at **[The Hume Hotel](https://www.humehotel.com/) in Nelson, British Columbia**.
-#### We'll keep this website updated with details, formal invitations to follow.
+
+### We'll keep this website updated with details. Formal invitations to follow.
+
+### If you are using this website on a phone or tablet, you can access the menu with more information in the upper right "3 lined menu".
 </center>
