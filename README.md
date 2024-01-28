@@ -1,3 +1,8 @@
+# To Do List pre Invitations
+
+- add honeymoon fund
+- update agenda (with rough agenda at least)
+
 # Make your website with R Markdown in minutes
 
 This is a template (and tutorial) for creating your website with R Markdown in minutes.
