@@ -19,6 +19,8 @@ navbar:
     - text: "Q&A"
       #icon: fa-file
       href: qa.html
+    - text: "Registry"
+      href: registry.html
   # right:
   #   - icon: fa-github
   #     href: https://github.com/BrandonEdwards      # CHANGE HERE 
