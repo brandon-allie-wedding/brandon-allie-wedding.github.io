@@ -7,6 +7,9 @@ navbar:
     - text: "Home"
      # icon: fa-user 
       href: index.html
+    - text: "Schedule"
+      #icon: fa-code
+      href: schedule.pdf
     - text: "Venue Info"
       #icon: fa-code
       href: venue.html
